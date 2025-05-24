@@ -35,31 +35,31 @@ const cardData: CardProps[] = [
   },
   {
     icon: <Network size={24} />,
-    title: "Proxy",
-    description: "This explains how the proxies on our sites work. This will show you how to use proxies yourself and how to set it up. This also shows what technologies are used in the proxy.",
+    title: "Languages",
+    description: "This section will introduce you to various computer languages, each accompanied by tutorials to help you get started.",
     link: "/docs#section-2",
-    ariaLabel: "Card to redirect to section 2, Proxy"
+    ariaLabel: "Card to redirect to section 2, Languages"
   },
   {
     icon: <Cloud size={24} />,
     title: "Deployment",
-    description: "This part shows how we deploy our websites, as well as what services we use for deployment and how to navigate each one.",
+    description: "This part shows how we deploy our websites, as well as what services we use for deployment and how to use each platform.",
     link: "/docs#section-3",
     ariaLabel: "Card to redirect to section 3, Deployment"
   },
   {
     icon: <Code size={24} />,
     title: "Making your website",
-    description: "This shows how you would make your own website, how to get games, and how to potentially get monetized.",
+    description: "This shows how you would make your own website, how to get games, add a proxy, and how to potentially get monetized.",
     link: "/docs#section-4",
     ariaLabel: "Card to redirect to section 4, Making your website"
   },
   {
     icon: <Puzzle size={24} />,
-    title: "Ext's",
-    description: "This shows a collection of different exts. All exts are made by a contributor. These exts are made for blocking extensions using many different methods.",
+    title: "Extensions",
+    description: "This shows a collection of different extensions. All exts are made by a contributor. These extensions are made for blocking filters that run on a extension by using various methods.",
     link: "/docs#section-5",
-    ariaLabel: "Card to redirect you to section 5, Exts"
+    ariaLabel: "Card to redirect you to section 5, Extensions"
   },
   {
     icon: <ShieldAlert size={24} />,
