@@ -49,7 +49,7 @@ const cardData: CardProps[] = [
   },
   {
     icon: <Code size={24} />,
-    title: "Making your website",
+    title: "Creating a Website",
     description: "This shows how you would make your own website, how to get games, add a proxy, and how to potentially get monetized.",
     link: "/docs#section-4",
     ariaLabel: "Card to redirect to section 4, Making your website"
