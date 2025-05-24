@@ -92,7 +92,7 @@ export default function Home() {
           Welcome to <span className="text-primary">PyroProgramming</span>
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto">
-          Your ultimate guide to the world of PeteZah Games, now forged in fire. Explore documentation, tutorials, and insights.
+          Your ultimate guide to the world of programming, now forged in fire. Explore documentation, tutorials, and insights.
         </p>
         <div className="space-y-4 sm:space-y-0 sm:space-x-4">
           <Button asChild size="lg" className="w-full sm:w-auto bg-primary hover:bg-fire-bright text-primary-foreground">
@@ -114,7 +114,7 @@ export default function Home() {
           Want to jump straight into the action? Click the button below to head to the games and proxy. If you want to learn how this all works, scroll down and explore the docs.
         </p>
         <Button asChild size="lg" className="bg-secondary hover:bg-fire-bright text-secondary-foreground">
-          <a href="https://petezahgames.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://insanity.purpleutilities.xyz/" target="_blank" rel="noopener noreferrer">
             To the Games! 🔥
           </a>
         </Button>
