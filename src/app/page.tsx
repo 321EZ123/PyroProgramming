@@ -36,14 +36,14 @@ const cardData: CardProps[] = [
   {
     icon: <Network size={24} />,
     title: "Proxy",
-    description: "This explains how to use the Proxy. This will show you how to use the proxy and how to set it up. This also shows what technologies are used in the proxy.",
+    description: "This explains how the proxies on our sites work. This will show you how to use proxies yourself and how to set it up. This also shows what technologies are used in the proxy.",
     link: "/docs#section-2",
     ariaLabel: "Card to redirect to section 2, Proxy"
   },
   {
     icon: <Cloud size={24} />,
     title: "Deployment",
-    description: "This part shows how we deploy our websites. As well as what services we use for deployment and how to navigate each one.",
+    description: "This part shows how we deploy our websites, as well as what services we use for deployment and how to navigate each one.",
     link: "/docs#section-3",
     ariaLabel: "Card to redirect to section 3, Deployment"
   },
