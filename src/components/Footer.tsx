@@ -9,7 +9,7 @@ const Footer = () => (
             &copy; {new Date().getFullYear()} PyroProgramming. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground mt-1">
-            Original design by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Xiaoying Riley</a>.
+            Created design by <a href="http://discord.com/users/1200542854326521886" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">EZ123</a>.
           </p>
         </div>
         <div className="flex space-x-4">
