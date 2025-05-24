@@ -1,6 +1,5 @@
 import type React from 'react';
 
-// Helper component for consistent section styling
 const DocsSection: React.FC<{ id: string; title: string; lastUpdated?: string; children: React.ReactNode }> = ({ id, title, lastUpdated, children }) => (
   <section id={id} className="mb-16 scroll-mt-20">
     <div className="flex justify-between items-center mb-4 pb-2 border-b border-fire-darker">
@@ -13,7 +12,6 @@ const DocsSection: React.FC<{ id: string; title: string; lastUpdated?: string; c
   </section>
 );
 
-// Helper for tables (if any, the scraped content was markdown)
 const Table: React.FC<{ headers: string[]; rows: string[][] }> = ({ headers, rows }) => (
   <div className="overflow-x-auto my-6">
     <table className="min-w-full divide-y divide-fire-darker border border-fire-darker rounded-md">
