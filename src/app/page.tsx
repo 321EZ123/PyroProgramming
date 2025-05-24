@@ -101,21 +101,21 @@ export default function Home() {
             </Link>
           </Button>
           <Button asChild variant="outline" size="lg" className="w-full sm:w-auto border-primary text-primary hover:bg-primary/10 hover:text-primary-foreground">
-            <a href="https://petezahgames.com/" target="_blank" rel="noopener noreferrer">
-              Go to Games
+            <a href="https://discord.gg/Gv4rVt2SJp" target="_blank" rel="noopener noreferrer">
+              Join our Discord
             </a>
           </Button>
         </div>
       </section>
 
       <section className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-secondary">Back to the games?</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-secondary">Need Help?</h2>
         <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-          Want to jump straight into the action? Click the button below to head to the games and proxy. If you want to learn how this all works, scroll down and explore the docs.
+          Join our discord if you need help with anything related to the content on this site. If you want to learn about programming, scroll down and explore the docs.
         </p>
         <Button asChild size="lg" className="bg-secondary hover:bg-fire-bright text-secondary-foreground">
-          <a href="https://insanity.purpleutilities.xyz/" target="_blank" rel="noopener noreferrer">
-            To the Games! 🔥
+          <a href="https://discord.gg/Gv4rVt2SJp/" target="_blank" rel="noopener noreferrer">
+            Join our Discord! 🔥
           </a>
         </Button>
       </section>
