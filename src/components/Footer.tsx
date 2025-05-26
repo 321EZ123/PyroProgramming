@@ -13,7 +13,7 @@ const Footer = () => (
           </p>
         </div>
         <div className="flex space-x-4">
-          <a href="https://github.com/petezahv4/docs" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">
+          <a href="https://github.com/321ez123/PyroProgramming" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">
             <Github className="h-6 w-6" />
           </a>
           <a href="https://twitter.com/PeteZahGames" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Twitter">
