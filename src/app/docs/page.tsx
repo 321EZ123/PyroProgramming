@@ -76,29 +76,20 @@ export default function DocsPage() {
         />
       </DocsSection>
 
-      <DocsSection id="section-2" title="Proxy">
-        <h3 id="item-2-1" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">UV Static</h3>
-        <h4 className="text-xl font-semibold text-fire-medium mt-6 mb-2 scroll-mt-20">What is UV Static</h4>
-        <p>Ultraviolet is a free and open-source web proxy that allows users to access blocked websites and content. It works by routing the user's internet traffic through a remote server, effectively masking their IP address and location. This can be useful for bypassing censorship, accessing geo-restricted content, or simply maintaining privacy online.</p>
-        <p><strong>Where can I find the UV Static proxy?</strong></p>
-        <p>You can find the UV Static proxy at this <a href="https://github.com/tf7software/UV-Static" target="_blank" rel="noopener noreferrer">Git repo</a></p>
-        <p><strong>How do I use the UV Static proxy?</strong></p>
-        <p>To use the UV Static proxy, simply enter the URL of the website you want to access into the provided input field on the UV Static homepage. The proxy will then fetch the requested page and display it in your browser.</p>
-
-        <h3 id="item-2-2" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">How to make your own proxy</h3>
-        <h4 className="text-xl font-semibold text-fire-medium mt-6 mb-2 scroll-mt-20">What is a proxy?</h4>
-        <p>A proxy is a server that acts as an intermediary between a user's device and the internet. It allows users to access websites and content by routing their requests through the proxy server, which can provide various benefits such as anonymity, bypassing restrictions, and improved security.</p>
-        <p><strong>How do I make my own proxy?</strong></p>
-        <p>To make your own proxy, you can use a variety of tools and technologies. A popular option is using something like UV static as shown. You will need someone to provide the backend for your proxy. You can use something like Benrogo to do this.</p>
-
-        <h4 className="text-xl font-semibold text-fire-medium mt-6 mb-2 scroll-mt-20">What is Benrogo</h4>
-        <p>Benrogo is our provider of bare backends for our proxies. Benrogo provides the bare part of the uv.config.js. Without Benrogo, we would not be able to provide the proxy services that we do. Benrogo.net is also a great place for finding proxy websites as it indexes them. If you would like to have a backend for your proxy, you can contact benrogo.</p>
-        <p><strong>How do I contact Benrogo?</strong></p>
-        <p>You can contact Benrogo by joining this <a href="https://discord.gg/QKRrsjXgDB" target="_blank" rel="noopener noreferrer">Discord server</a> and dming him</p>
-
-        <h3 id="item-2-3" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Titanium Network</h3>
-        <p>Titanium Network is the developer of ultraviolet. Ultraviolet was originally created by Titanium Network and was origially made as a dynamic proxy. Though Ultraviolet was modified in such a way by TIW that it was static. Though eventually the project was archived by TIW and is now being maintained by tf7software.</p>
-        <p>See time line for further info</p>
+      <DocsSection id="section-2" title="Languages">
+        <h3 id="item-2-1" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">About Computer Languages</h3>
+        <h4 className="text-xl font-semibold text-fire-medium mt-6 mb-2 scroll-mt-20">What are Computer Languages?</h4>
+        <p>Computer languages are ways to communicate with computers using a set of rules and instructions. They help programmers create software, run scripts, and process data. There are many types of computer languages, such as high-level languages like Python and Java, which are easier to use, and low-level languages like Assembly and C, which give more control over hardware. Each language has its own structure and meaning, designed for different tasks, helping developers build and work with technology effectively.</p>
+        <h4 className="text-xl font-semibold text-fire-medium mt-6 mb-2 scroll-mt-20">Types of Languages</h4>
+        <p>There are different types of computer languages, each made for specific tasks. High-level languages, like Python and Java, are easy to use and help programmers write code more simply. Scripting languages, such as JavaScript and Ruby, are often used to automate tasks and improve websites. Low-level languages, like C and Assembly, give more control over computer hardware and are used for system programming. Markup languages, like HTML and XML, help organize and format text, especially for web pages. Finally, domain-specific languages, like SQL for managing databases, are designed for specific jobs, making them very useful in those areas.</p>
+        
+        <h4 className="text-xl font-semibold text-fire-medium mt-6 mb-2 scroll-mt-20">What Language Should I Learn?</h4>
+        <p>
+    Here is an image showing which programming language to learn based on your career goals:
+    <img src="https://s3.us-east-1.amazonaws.com/fsa2-assets/assets/New-blog/Which-Programming-Language-to-Learn-Based-on-Your-Career-Goals.jpg" alt="Which Programming Language to Learn" style="max-width: 100%; height: auto;">
+</p>
+        <h3 id="item-2-3" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Tutorials</h3>
+        <p>Insert link to language tutorials page here</p>
       </DocsSection>
 
       <DocsSection id="section-3" title="Deployment">
