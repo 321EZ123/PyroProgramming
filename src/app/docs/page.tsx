@@ -49,17 +49,16 @@ export default function DocsPage() {
         <p>Helix is a group that mainly focuses giving users unrestricted access to the internet, By using proxies or bypassing content filters, Helix offers a platform where users can enjoy various games and services directly in their browsers without the need for downloads. Our websites are particularly popular among students and employees looking for a way to access the web unrestricted. They feature a mix of casual, action, and puzzle games, with a simple, easy-to-navigate interface.</p>
 
         <h3 id="item-1-2" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Our Services</h3>
-        <p>Visit our static site Insanity at</p>
+        <p>Helix has several other projects aimed at improving user experiences. Horizon will be a downloadable site that helps users access online tools easily, inspired by Stripe's clean design. PyroProgramming is planned as a site for coding tutorials, offering step-by-step guides to help new programmers learn. Hyperion will provide important information in a simple, single HTML file for quick access. Cypher is designed to be a gaming site with manually ported games, focusing on an easy user experience and using UI elements from Tricks Side Nav and Linear Rebuild. There are also some undecided projects like Sentinel, a platform for streaming and reviewing films, CalamityOS, which will look like an operating system with gaming features, and Meteor, a forum where users can discuss different topics./p>
         <p>For other links and more because links can go down go to <a href="https://docs.google.com/document/d/17ZuzqlWf6KESTwROJMNQ_x52Ob-cvuM5YWL-GU_rZtc/edit?tab=t.3t8l6tv2t8f0" target="_blank" rel="noopener noreferrer">Essay EWJ404</a> Google Doc</p>
-        <p>For PeteZah, you can find our website at <a href="https://www.petezahgames.com/" target="_blank" rel="noopener noreferrer">PeteZahGames.com</a></p>
-        <p>For More PeteZah links, you can go to our discord at <a href="https://discord.com/invite/petezah" target="_blank" rel="noopener noreferrer">Discord.gg/PeteZah</a></p>
-
+       
         <h3 id="item-1-3" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">The services we offer</h3>
         <p>We offer a wide range of services to our users. These services include:</p>
         <ul className="list-disc list-inside my-4 space-y-1">
           <li>Unblocked games</li>
           <li>Proxies</li>
-          <li>About:blank cloaking</li>
+          <li>Advanced cloaking</li>
+          <li>AI tools</li>
         </ul>
         <p>Providing these services allows you to access the web without restrictions and enjoy a wide range of games and content. Here are some benefits to a proxy:</p>
         <Table
