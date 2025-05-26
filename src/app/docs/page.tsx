@@ -43,13 +43,13 @@ export default function DocsPage() {
   return (
     <article>
       <DocsSection id="section-1" title="Introduction" lastUpdated="4/15/2025">
-        <p>Welcome to the PeteZah documentation! This documentation is designed to help you understand how to use our products and services.</p>
+        <p>Welcome to PyroProgramming! This documentation is designed to help you learn about programming.</p>
 
         <h3 id="item-1-1" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">About us</h3>
-        <p>PeteZah Games is an unblocked gaming website that allows users to access a wide range of internet access and ecrypts data from different blockers. By using proxies or bypassing content filters, PeteZah offers a platform where users can enjoy various games and services directly in their browsers without the need for downloads. The website is particularly popular among students and employees looking for a way to access the web unrestricted. It features a mix of casual, action, and puzzle games, with a simple, easy-to-navigate interface.</p>
+        <p>Helix is a group that mainly focuses giving users unrestricted access to the internet, By using proxies or bypassing content filters, Helix offers a platform where users can enjoy various games and services directly in their browsers without the need for downloads. Our websites are particularly popular among students and employees looking for a way to access the web unrestricted. They feature a mix of casual, action, and puzzle games, with a simple, easy-to-navigate interface.</p>
 
-        <h3 id="item-1-2" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Our Websites</h3>
-        <p>For The other games, you can find our website at one of the main Firebase Learn Mores</p>
+        <h3 id="item-1-2" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Our Services</h3>
+        <p>Visit our static site Insanity at</p>
         <p>For other links and more because links can go down go to <a href="https://docs.google.com/document/d/17ZuzqlWf6KESTwROJMNQ_x52Ob-cvuM5YWL-GU_rZtc/edit?tab=t.3t8l6tv2t8f0" target="_blank" rel="noopener noreferrer">Essay EWJ404</a> Google Doc</p>
         <p>For PeteZah, you can find our website at <a href="https://www.petezahgames.com/" target="_blank" rel="noopener noreferrer">PeteZahGames.com</a></p>
         <p>For More PeteZah links, you can go to our discord at <a href="https://discord.com/invite/petezah" target="_blank" rel="noopener noreferrer">Discord.gg/PeteZah</a></p>
