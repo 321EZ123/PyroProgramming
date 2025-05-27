@@ -125,7 +125,7 @@ export default function DocsPage() {
           <li>Wait for propagation.</li>
         </ol>
         <h3 id="item-3-2" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Fastly (global.ssl.fastly.net)</h3>
-        <p>Fastly allows you to have a website that will imitate a different website. You can create services, set domains, and point to PeteZahGames.com.</p>
+        <p>Fastly's CDN allows you to have a website that will imitate a different website. You can create services, set domains, and point to our services, such as Insanity or even this website itself.</p>
         <h3 id="item-3-3" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Back4App (b4a.run)</h3>
         <p>BackForApp’s deployment service makes it easy for you to launch your application. To begin, you need to create a Dockerfile, which is a simple file that lists what your app needs to run. This Dockerfile helps ensure that your application works the same way on different platforms. Once your Dockerfile is ready, you can follow the easy steps from BackForApp to deploy your service. This process not only simplifies launching your app but also helps you manage and grow it effectively, making sure everything runs smoothly from development to production.</p>
         <h3 id="item-3-4" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Vercel (vercel.app)</h3>
