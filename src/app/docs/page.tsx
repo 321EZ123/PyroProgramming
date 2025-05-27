@@ -116,6 +116,7 @@ export default function DocsPage() {
       </DocsSection>
 
       <DocsSection id="section-3" title="Deployment">
+        <p>You can deploy your GitHub repository on many different services, giving you options to find the best one for your project. While many platforms work with GitHub, only some offer free plans or free tiers that let you host your applications at no cost. This is helpful for new developers or anyone wanting to try out their projects before paying for a service. Below, we list some of the best services that allow you to deploy your GitHub repository for free, making it simple to get your applications online without spending any money.</p>
         <h3 id="item-3-1" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Custom Domains</h3>
         <p>Sometimes we will become lucky enough to deploy with custom domains. Custom domains can be deployed with most services as long as you have the necessary DNS records. The only problem with custom domains is that they can be expensive. It is also possible to "bring your own domain" (BYOD) for Insanity. This allows you to buy your own domain and configure it with Fastly to redirect to Insanity.</p>
         <ol className="list-decimal list-inside my-4 space-y-2">
@@ -125,7 +126,7 @@ export default function DocsPage() {
         </ol>
         <h3 id="item-3-2" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Fastly (global.ssl.fastly.net)</h3>
         <p>Fastly allows you to have a website that will imitate a different website. You can create services, set domains, and point to PeteZahGames.com.</p>
-        <h3 id="item-3-3" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Back4App (bfa.run)</h3>
+        <h3 id="item-3-3" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Back4App (b4a.run)</h3>
         <p>BackForApp’s deployment service makes it easy for you to launch your application. To begin, you need to create a Dockerfile, which is a simple file that lists what your app needs to run. This Dockerfile helps ensure that your application works the same way on different platforms. Once your Dockerfile is ready, you can follow the easy steps from BackForApp to deploy your service. This process not only simplifies launching your app but also helps you manage and grow it effectively, making sure everything runs smoothly from development to production.</p>
         <h3 id="item-3-4" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Vercel (vercel.app)</h3>
         <p>Vercel's deployment service offers a straightforward way to launch your static websites and applications. To get started, you simply connect your GitHub or GitLab repository, and Vercel automatically detects your project settings. It specializes in static hosting, meaning it efficiently serves your pre-built files without the need for a backend server. Once you set up your project, you can deploy it with just a click. Vercel also makes it easy to manage updates, allowing you to push changes and see them live instantly. With Vercel, you can focus on creating your content while it handles the hosting and deployment seamlessly.</p>
