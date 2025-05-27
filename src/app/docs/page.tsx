@@ -117,18 +117,25 @@ export default function DocsPage() {
 
       <DocsSection id="section-3" title="Deployment">
         <h3 id="item-3-1" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Custom Domains</h3>
-        <p>Sometimes we will become lucky enough to deploy with custom domains. Custom domains can be deployed with most services as long as you have the necessary DNS records. The only problem with custom domains is that they can be expensive. It is also possible to "bring your own domain" (BYOD) for PeteZah. This allows you to buy your own domain and configure it with Fastly to redirect to PeteZah.</p>
+        <p>Sometimes we will become lucky enough to deploy with custom domains. Custom domains can be deployed with most services as long as you have the necessary DNS records. The only problem with custom domains is that they can be expensive. It is also possible to "bring your own domain" (BYOD) for Insanity. This allows you to buy your own domain and configure it with Fastly to redirect to Insanity.</p>
         <ol className="list-decimal list-inside my-4 space-y-2">
           <li>Buy a domain from a provider like <a href="https://www.namecheap.com/" target="_blank" rel="noopener noreferrer">Namecheap</a>.</li>
           <li>Follow Fastly configuration: clone a version, add your domain, configure TLS, and update DNS records.</li>
           <li>Wait for propagation.</li>
         </ol>
-        <h3 id="item-3-2" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Fastly</h3>
+        <h3 id="item-3-2" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Fastly (global.ssl.fastly.net)</h3>
         <p>Fastly allows you to have a website that will imitate a different website. You can create services, set domains, and point to PeteZahGames.com.</p>
-        <h3 id="item-3-3" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Firebase (web.app)</h3>
-        <p>Firebase hosting is unblocked for Lightspeed. Use the Firebase console to create a project, enable hosting, and deploy with <code>firebase deploy</code>.</p>
-        <h3 id="item-3-4" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Cloudflare (pages.dev)</h3>
-        <p>Cloudflare Pages offers static hosting. Connect your GitHub repo, configure build command <code>npm run build</code>, and deploy.</p>
+        <h3 id="item-3-3" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Back4App (bfa.run)</h3>
+        <p>BackForApp’s deployment service makes it easy for you to launch your application. To begin, you need to create a Dockerfile, which is a simple file that lists what your app needs to run. This Dockerfile helps ensure that your application works the same way on different platforms. Once your Dockerfile is ready, you can follow the easy steps from BackForApp to deploy your service. This process not only simplifies launching your app but also helps you manage and grow it effectively, making sure everything runs smoothly from development to production.</p>
+        <h3 id="item-3-4" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Vercel (vercel.app)</h3>
+        <p>Vercel's deployment service offers a straightforward way to launch your static websites and applications. To get started, you simply connect your GitHub or GitLab repository, and Vercel automatically detects your project settings. It specializes in static hosting, meaning it efficiently serves your pre-built files without the need for a backend server. Once you set up your project, you can deploy it with just a click. Vercel also makes it easy to manage updates, allowing you to push changes and see them live instantly. With Vercel, you can focus on creating your content while it handles the hosting and deployment seamlessly.</p>
+        <h3 id="item-3-4" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Netlify (netlify.app)</h3>
+        <p>Netlify’s deployment service is designed to make launching your static websites easy and efficient. To get started, you can connect your GitHub repository or upload your project files directly. Since Netlify focuses on static hosting, it serves your pre-built files quickly without needing a backend server. After setting up your project, deploying it is as simple as clicking a button. Netlify also allows for easy updates, so you can push changes and see them live right away. With Netlify, you can concentrate on building your site while it manages the deployment and hosting for you.</p>
+        <h3 id="item-3-4" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Railway (railway.app)</h3>
+        <p>Railway’s deployment service makes it easy to launch your applications quickly. To get started, you can connect your GitHub repository or deploy directly from your computer. Railway supports both static and dynamic hosting, which is great for different types of projects. With the free tier, you get a limited number of credits each month that you can use for deployments and resources. Just keep in mind that these credits will eventually run out, so you’ll need to keep an eye on your usage if you want your application to stay up and running. Railway helps you scale up when needed, so you can focus on building your project without worrying too much about the technical side of deployment.</p>
+        <h3 id="item-3-4" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Koyeb (koyeb.app)</h3>
+        <p>Koyeb's deployment service is a simple way to launch your applications. You can easily connect your GitHub repository or deploy directly from your computer. Koyeb supports both static and dynamic hosting, making it suitable for various projects. With the free tier, you can only have one free service running at a time, so keep that in mind as you plan your deployments. This limitation allows you to test and develop your applications without any costs, but you'll need to upgrade if you want to run more services. Koyeb makes it easy to manage your deployments, letting you focus on building your project without getting bogged down by technical details.</p>
+        
       </DocsSection>
 
       <DocsSection id="section-4" title="Making your website">
