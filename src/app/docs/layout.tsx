@@ -1,4 +1,4 @@
-import React from 'react';
+import type React from 'react';
 
 export default function DocsLayout({
   children,
@@ -15,16 +15,15 @@ export default function DocsLayout({
               <a href="#section-1" className="text-muted-foreground hover:text-primary transition-colors">Introduction</a>
               <ul className="pl-4 mt-1 space-y-1">
                 <li><a href="#item-1-1" className="text-sm text-muted-foreground hover:text-primary">About us</a></li>
-                <li><a href="#item-1-2" className="text-sm text-muted-foreground hover:text-primary">Our Websites</a></li>
-                <li><a href="#item-1-3" className="text-sm text-muted-foreground hover:text-primary">The services we offer</a></li>
+                <li><a href="#item-1-2" className="text-sm text-muted-foreground hover:text-primary">Our Services</a></li>
+                <li><a href="#item-1-3" className="text-sm text-muted-foreground hover:text-primary">Features</a></li>
               </ul>
             </li>
             <li>
-              <a href="#section-2" className="text-muted-foreground hover:text-primary transition-colors">Proxy</a>
+              <a href="#section-2" className="text-muted-foreground hover:text-primary transition-colors">Languages</a>
               <ul className="pl-4 mt-1 space-y-1">
-                <li><a href="#item-2-1" className="text-sm text-muted-foreground hover:text-primary">UV Static</a></li>
-                <li><a href="#item-2-2" className="text-sm text-muted-foreground hover:text-primary">How to make your own proxy</a></li>
-                <li><a href="#item-2-3" className="text-sm text-muted-foreground hover:text-primary">Titanium Network</a></li>
+                <li><a href="#item-2-1" className="text-sm text-muted-foreground hover:text-primary">About Computer Languages</a></li>
+                <li><a href="#item-2-3" className="text-sm text-muted-foreground hover:text-primary">Tutorials</a></li>
               </ul>
             </li>
             <li>
@@ -32,8 +31,11 @@ export default function DocsLayout({
               <ul className="pl-4 mt-1 space-y-1">
                 <li><a href="#item-3-1" className="text-sm text-muted-foreground hover:text-primary">Custom Domains</a></li>
                 <li><a href="#item-3-2" className="text-sm text-muted-foreground hover:text-primary">Fastly</a></li>
-                <li><a href="#item-3-3" className="text-sm text-muted-foreground hover:text-primary">Firebase (web.app)</a></li>
-                <li><a href="#item-3-4" className="text-sm text-muted-foreground hover:text-primary">Cloudflare (pages.dev)</a></li>
+                <li><a href="#item-3-3" className="text-sm text-muted-foreground hover:text-primary">Back4App (b4a.run)</a></li>
+                <li><a href="#item-3-4" className="text-sm text-muted-foreground hover:text-primary">Vercel (vercel.app)</a></li>
+                <li><a href="#item-3-4" className="text-sm text-muted-foreground hover:text-primary">Netlify (netlify.app)</a></li>
+                <li><a href="#item-3-4" className="text-sm text-muted-foreground hover:text-primary">Railway (railway.app)</a></li>
+                <li><a href="#item-3-4" className="text-sm text-muted-foreground hover:text-primary">Koyeb (koyeb.app)</a></li>
               </ul>
             </li>
             <li>
@@ -47,16 +49,10 @@ export default function DocsLayout({
               </ul>
             </li>
             <li>
-              <a href="#section-5" className="text-muted-foreground hover:text-primary transition-colors">Ext's</a>
+              <a href="#section-5" className="text-muted-foreground hover:text-primary transition-colors">Exploits</a>
             </li>
             <li>
-              <a href="#section-6" className="text-muted-foreground hover:text-primary transition-colors">ChromeOS Exploits</a>
-            </li>
-            <li>
-              <a href="#section-8" className="text-muted-foreground hover:text-primary transition-colors">Extension Blockers</a>
-            </li>
-            <li>
-              <a href="#section-9" className="text-muted-foreground hover:text-primary transition-colors">FAQs</a>
+              <a href="#section-6" className="text-muted-foreground hover:text-primary transition-colors">FAQs</a>
             </li>
           </ul>
         </nav>

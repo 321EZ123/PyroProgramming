@@ -55,32 +55,18 @@ const cardData: CardProps[] = [
     ariaLabel: "Card to redirect to section 4, Making your website"
   },
   {
-    icon: <Puzzle size={24} />,
-    title: "Extensions",
-    description: "This shows a collection of different extensions. All exts are made by a contributor. These extensions are made for blocking filters that run on a extension by using various methods.",
+    icon: <ShieldAlert size={24} />,
+    title: "Exploits",
+    description: "Community tools and tricks for bypassing filters and restrictions (not endorsed).",
     link: "/docs#section-5",
-    ariaLabel: "Card to redirect you to section 5, Extensions"
-  },
-  {
-    icon: <ShieldAlert size={24} />,
-    title: "ChromeOS Exploits",
-    description: "This section contains info on how to do various exploits on Chromebooks. This will contain info about the recovery screen and many available exploits.",
-    link: "/docs#section-6",
-    ariaLabel: "Card to redirect to section 6, ChromeOS Exploits"
-  },
-  {
-    icon: <ShieldAlert size={24} />,
-    title: "Extension Blockers",
-    description: "These show alternate ways to block extensions. These are usually last longer though require more steps/require the user to do more stuff.",
-    link: "/docs#section-8",
-    ariaLabel: "Card to redirect to section 7, Extension Blockers"
+    ariaLabel: "Card to redirect to section 5, Exploits"
   },
   {
     icon: <CircleHelp size={24} />,
     title: "FAQs",
     description: "This is for frequently asked questions. If you have a question that is not answered here please feel free to reach out to us on our socials or on GitHub.",
-    link: "/docs#section-9",
-    ariaLabel: "Card to redirect to section 8, FAQs"
+    link: "/docs#section-6",
+    ariaLabel: "Card to redirect to section 6, FAQs"
   }
 ];
 
