@@ -9,18 +9,7 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="mr-2 h-6 w-6 text-primary"
-              >
-                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-              </svg>
+              <Flame className="mr-2 h-6 w-6 text-primary" />
               <span className="font-bold text-xl">PyroProgramming</span>
             </Link>
           </div>
@@ -38,12 +27,16 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Button variant="outline" size="sm" className="hidden md:inline-flex">
-              Sign Up
-            </Button>
-            <Button size="sm" className="hidden md:inline-flex">
-              Login
-            </Button>
+            <Link href="/signup">
+              <Button variant="outline" size="sm" className="hidden md:inline-flex">
+                Sign Up
+              </Button>
+            </Link>
+            <Link href="/login">
+              <Button size="sm" className="hidden md:inline-flex">
+                Login
+              </Button>
+            </Link>
             <Button variant="ghost" size="icon" className="md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
