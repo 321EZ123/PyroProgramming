@@ -26,14 +26,11 @@ const TutorialSection: React.FC<TutorialSectionProps> = ({
           <p className="text-lg mb-6">{description}</p>
           <div className="space-y-4">
             <Button variant="default" className="bg-primary hover:bg-primary/90 text-white px-6 py-5 text-base">
-              Learn {title}
+              <Link href={`/tutorials/${title.toLowerCase()}`}>Learn {title}</Link>
             </Button>
             <div className="flex space-x-4 mt-4">
               <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10 px-4 py-3 text-sm">
                 {title} Reference
-              </Button>
-              <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10 px-4 py-3 text-sm">
-                Get Certified
               </Button>
             </div>
           </div>
