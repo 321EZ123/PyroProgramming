@@ -33,9 +33,9 @@ export default function DocsLayout({
                 <li><a href="#item-3-2" className="text-sm text-muted-foreground hover:text-primary">Fastly</a></li>
                 <li><a href="#item-3-3" className="text-sm text-muted-foreground hover:text-primary">Back4App (b4a.run)</a></li>
                 <li><a href="#item-3-4" className="text-sm text-muted-foreground hover:text-primary">Vercel (vercel.app)</a></li>
-                <li><a href="#item-3-4" className="text-sm text-muted-foreground hover:text-primary">Netlify (netlify.app)</a></li>
-                <li><a href="#item-3-4" className="text-sm text-muted-foreground hover:text-primary">Railway (railway.app)</a></li>
-                <li><a href="#item-3-4" className="text-sm text-muted-foreground hover:text-primary">Koyeb (koyeb.app)</a></li>
+                <li><a href="#item-3-5" className="text-sm text-muted-foreground hover:text-primary">Netlify (netlify.app)</a></li>
+                <li><a href="#item-3-6" className="text-sm text-muted-foreground hover:text-primary">Railway (railway.app)</a></li>
+                <li><a href="#item-3-7" className="text-sm text-muted-foreground hover:text-primary">Koyeb (koyeb.app)</a></li>
               </ul>
             </li>
             <li>
