@@ -50,9 +50,21 @@ export default function DocsLayout({
             </li>
             <li>
               <a href="#section-5" className="text-muted-foreground hover:text-primary transition-colors">Exploits</a>
+              <ul className="pl-4 mt-1 space-y-1">
+                <li><a href="#item-5-1" className="text-sm text-muted-foreground hover:text-primary">Browser Extensions</a></li>
+                <li><a href="#item-5-2" className="text-sm text-muted-foreground hover:text-primary">Extension Blockers</a></li>
+                <li><a href="#item-5-3" className="text-sm text-muted-foreground hover:text-primary">ChromeOS Methods</a></li>
+              </ul>
             </li>
             <li>
               <a href="#section-6" className="text-muted-foreground hover:text-primary transition-colors">FAQs</a>
+              <ul className="pl-4 mt-1 space-y-1">
+                <li><a href="#item-6-1" className="text-sm text-muted-foreground hover:text-primary">How do I start learning programming?</a></li>
+                <li><a href="#item-6-2" className="text-sm text-muted-foreground hover:text-primary">Which programming language should I learn first?</a></li>
+                <li><a href="#item-6-3" className="text-sm text-muted-foreground hover:text-primary">How long does it take to build a website?</a></li>
+                <li><a href="#item-6-4" className="text-sm text-muted-foreground hover:text-primary">Do I need to pay for hosting?</a></li>
+                <li><a href="#item-6-5" className="text-sm text-muted-foreground hover:text-primary">Can I use the code examples in my projects?</a></li>
+              </ul>
             </li>
           </ul>
         </nav>
