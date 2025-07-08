@@ -4,27 +4,26 @@ import TutorialSidebar from "@/components/TutorialSidebar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-const sqlSidebarItems = [
-  { title: "SQL Home", href: "/tutorials/sql" },
-  { title: "SQL Introduction", href: "/tutorials/sql/intro" },
-  { title: "SQL Syntax", href: "/tutorials/sql/syntax" },
-  { title: "SQL Select", href: "/tutorials/sql/select" },
-  { title: "SQL Select Distinct", href: "/tutorials/sql/selectdistinct" },
-  { title: "SQL Where", href: "/tutorials/sql/where" },
-  { title: "SQL And, Or, Not", href: "/tutorials/sql/where" },
-  { title: "SQL Order By", href: "/tutorials/sql/orderby" },
-  { title: "SQL Insert Into", href: "/tutorials/sql/insert" },
-  { title: "SQL Null Values", href: "/tutorials/sql/null" },
-  { title: "SQL Update", href: "/tutorials/sql/update" },
-  { title: "SQL Delete", href: "/tutorials/sql/delete" },
-  { title: "SQL Select Top", href: "/tutorials/sql/top" },
-  { title: "SQL Min and Max", href: "/tutorials/sql/minmax" },
-  { title: "SQL Count, Avg, Sum", href: "/tutorials/sql/count" },
-  { title: "SQL Like", href: "/tutorials/sql/like" },
-  { title: "SQL Wildcards", href: "/tutorials/sql/wildcards" },
-  { title: "SQL In", href: "/tutorials/sql/in" },
-  { title: "SQL Between", href: "/tutorials/sql/between" },
-  { title: "SQL Join", href: "/tutorials/sql/join" },
+const javaSidebarItems = [
+  { title: "Java HOME", href: "/tutorials/java" },
+  { title: "Java Intro", href: "/tutorials/java/intro" },
+  { title: "Java Get Started", href: "/tutorials/java/get-started" },
+  { title: "Java Syntax", href: "/tutorials/java/syntax" },
+  { title: "Java Output", href: "/tutorials/java/output" },
+  { title: "Java Comments", href: "/tutorials/java/comments" },
+  { title: "Java Variables", href: "/tutorials/java/variables" },
+  { title: "Java Data Types", href: "/tutorials/java/data-types" },
+  { title: "Java Type Casting", href: "/tutorials/java/type-casting" },
+  { title: "Java Operators", href: "/tutorials/java/operators" },
+  { title: "Java Strings", href: "/tutorials/java/strings" },
+  { title: "Java Math", href: "/tutorials/java/math" },
+  { title: "Java Booleans", href: "/tutorials/java/booleans" },
+  { title: "Java If...Else", href: "/tutorials/java/if-else" },
+  { title: "Java Switch", href: "/tutorials/java/switch" },
+  { title: "Java While Loop", href: "/tutorials/java/while-loop" },
+  { title: "Java For Loop", href: "/tutorials/java/for-loop" },
+  { title: "Java Break/Continue", href: "/tutorials/java/break-continue" },
+  { title: "Java Arrays", href: "/tutorials/java/arrays" },
 ];
 
 export default function SqlLayout({
@@ -34,7 +33,7 @@ export default function SqlLayout({
 }) {
   return (
     <div className="flex min-h-screen">
-      <TutorialSidebar items={sqlSidebarItems} language="SQL" />
+      <TutorialSidebar items={javaSidebarItems} language="Java" />
       <main className="flex-1">
         <div className="p-6">
           {children}
