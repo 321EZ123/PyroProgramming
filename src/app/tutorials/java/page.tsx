@@ -30,7 +30,7 @@ export default function JavaTutorialHome() {
             <span className="text-gray-300 text-sm">Example</span>
           </div>
           <div className="p-4">
-            <pre className="text-green-400 font-mono text-sm">
+            <pre className="text-orange-400 font-mono text-sm">
               <code>{`public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
@@ -39,7 +39,7 @@ export default function JavaTutorialHome() {
             </pre>
           </div>
         </div>
-        <Button className="bg-green-600 hover:bg-green-700 text-white">
+        <Button className="bg-orange-600 hover:bg-orange-700 text-white">
           Try it Yourself »
         </Button>
       </div>
@@ -63,20 +63,20 @@ export default function JavaTutorialHome() {
         <p className="text-lg mb-4">
           Test your Java skills with a quiz. You will get 1 point for each correct answer. Good luck!
         </p>
-        <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+        <Button className="bg-primary hover:bg-primary/90 text-white">
           Start Java Quiz »
         </Button>
       </div>
 
-      <div className="mb-10 bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 p-6 rounded-md">
-        <h2 className="text-3xl font-bold mb-4 text-blue-900">My Learning</h2>
-        <p className="text-lg mb-4 text-blue-800">
+      <div className="mb-8 bg-card/50 border border-fire-darker p-6 rounded-md">
+        <h2 className="text-3xl font-bold mb-4">My Learning</h2>
+        <p className="text-lg mb-4">
           Track your progress with the free "My Learning" program here at Pyro Programming.
         </p>
-        <p className="text-lg mb-4 text-blue-800">
+        <p className="text-lg mb-4">
           Log in to your account, and start earning points!
         </p>
-        <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+        <Button className="bg-primary hover:bg-primary/90 text-white mt-4">
           Get Started »
         </Button>
       </div>
