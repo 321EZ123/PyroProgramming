@@ -145,13 +145,28 @@ p {
   print("Five is greater than two!")`}
       />
 
+      {/* Java Section */}
+      <TutorialSection
+        title="Java"
+        description="A powerful, object-oriented programming language"
+        bgClass="bg-background"
+        code={`public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`}
+      />
+
       {/* SQL Section */}
       <TutorialSection
-        title="SQL"
-        description="A language for accessing databases"
+        title="Java"
+        description="A powerful, object-oriented programming language"
         bgClass="bg-background"
-        code={`SELECT * FROM Customers
-WHERE Country='Mexico';`}
+        code={`public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`}
       />
 
       {/* Code Editor Section */}
