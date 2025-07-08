@@ -1,200 +1,225 @@
-import type React from 'react';
+import Link from 'next/link';
+import { Button } from "@/components/ui/button";
 
-const DocsSection: React.FC<{
-  id: string;
+interface TutorialSectionProps {
   title: string;
-  lastUpdated?: string;
-  children: React.ReactNode;
-}> = ({ id, title, lastUpdated, children }) => (
-  <section id={id} className="mb-16 scroll-mt-20">
-    <div className="flex justify-between items-center mb-4 pb-2 border-b border-fire-darker">
-      <h2 className="text-4xl font-bold text-primary">{title}</h2>
-      {lastUpdated && (
-        <p className="text-sm text-muted-foreground">Last updated: {lastUpdated}</p>
-      )}
-    </div>
-    <div className="prose prose-invert max-w-none prose-headings:text-secondary prose-a:text-accent hover:prose-a:text-fire-bright prose-strong:text-fire-medium prose-blockquote:border-fire-medium prose-code:text-fire-yellow prose-code:bg-card prose-code:p-1 prose-code:rounded-sm">
-      {children}
-    </div>
-  </section>
-);
+  description: string;
+  bgClass: string;
+  code?: string;
+  language?: string;
+  children?: React.ReactNode;
+}
 
-const Table: React.FC<{
-  headers: string[];
-  rows: string[][];
-}> = ({ headers, rows }) => (
-  <div className="overflow-x-auto my-6">
-    <table className="min-w-full divide-y divide-fire-darker border border-fire-darker rounded-md">
-      <thead className="bg-card">
-        <tr>
-          {headers.map((header) => (
-            <th
-              key={header}
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider"
-            >
-              {header}
-            </th>
-          ))}
-        </tr>
-      </thead>
-      <tbody className="bg-background divide-y divide-fire-darker">
-        {rows.map((row) => (
-          <tr key={row[0]}>
-            {row.map((cell, cellIndex) => (
-              <td
-                key={cell}
-                className="px-6 py-4 whitespace-nowrap text-sm text-foreground"
-              >
-                {cell}
-              </td>
-            ))}
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
-);
-
-export default function DocsPage() {
+const TutorialSection: React.FC<TutorialSectionProps> = ({
+  title,
+  description,
+  bgClass,
+  code,
+  language,
+  children
+}) => {
   return (
-    <article>
-      <DocsSection id="section-1" title="Introduction" lastUpdated="April 15, 2025">
-        <p className="mb-4">Welcome to PyroProgramming! We're here to help you learn programming in an easy way. Our guides are simple and straightforward. Whether you're just starting out or want to learn something new, we've got you covered.</p>
+    <section className={`w-full py-16 ${bgClass}`}>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-8">
+        <div className="flex-1">
+          <h2 className="text-6xl font-bold mb-4">{title}</h2>
+          <p className="text-lg mb-6">{description}</p>
+          <div className="space-y-4">
+            <Button variant="default" className="bg-primary hover:bg-primary/90 text-white px-6 py-5 text-base">
+              <Link href={`/tutorials/${title.toLowerCase()}`}>Learn {title}</Link>
+            </Button>
+            <div className="flex space-x-4 mt-4">
+              <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10 px-4 py-3 text-sm">
+                {title} Reference
+              </Button>
+            </div>
+          </div>
+        </div>
+        {code && (
+          <div className="flex-1">
+            <div className="rounded-md overflow-hidden shadow-lg">
+              <div className="bg-card p-4 border-b border-fire-darker">
+                <h3 className="text-lg font-semibold">{title} Example:</h3>
+              </div>
+              <div className="bg-[#1E1E1E] p-4 text-white font-mono text-sm overflow-x-auto">
+                <pre><code>{code}</code></pre>
+              </div>
+              <div className="bg-card p-3 flex justify-center">
+                <Button variant="default" className="bg-primary hover:bg-primary/90 text-white">
+                  Try it Yourself
+                </Button>
+              </div>
+            </div>
+          </div>
+        )}
+        {children}
+      </div>
+    </section>
+  );
+};
 
-        <h3 id="item-1-1" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">About Us</h3>
-        <p className="mb-4">We believe learning to code should be fun and not scary. Our team creates tutorials that anyone can follow. We focus on real projects you can actually build and use.</p>
+export default function TutorialsPage() {
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <section className="w-full py-24 bg-background border-b border-fire-darker">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-7xl font-bold mb-6 text-primary">Learn to Code</h1>
+          <p className="text-xl mb-8 text-foreground">With PyroProgramming's comprehensive language tutorials</p>
 
-        <h3 id="item-1-2" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Our Services</h3>
-        <p className="mb-4">Here's what we offer to help you succeed:</p>
-        <ul className="list-disc list-inside my-4 space-y-2">
-          <li>Step-by-step coding tutorials that are easy to follow</li>
-          <li>Live help sessions where you can ask questions</li>
-          <li>Free code examples you can use in your projects</li>
-          <li>A friendly community to learn with others</li>
-        </ul>
+          <div className="max-w-xl mx-auto relative">
+            <input
+              type="text"
+              placeholder="Search our tutorials, e.g. HTML"
+              className="w-full p-4 pr-12 rounded-md bg-card border border-fire-darker text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+            />
+            <Button className="absolute right-1 top-1 bottom-1 bg-primary hover:bg-primary/90 text-white px-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+            </Button>
+          </div>
 
-        <h3 id="item-1-3" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Key Features</h3>
-        <p className="mb-4">What makes our platform special:</p>
-        <Table
-          headers={["Feature", "Description"]}
-          rows={[
-            ["Easy Tutorials", "Simple guides that break down complex topics into small steps."],
-            ["Fresh Content", "We update our guides regularly to match current trends."],
-            ["Real Examples", "Working code you can copy and modify for your own projects."],
-            ["Practical Projects", "Build actual websites and apps, not just toy examples."]
-          ]}
-        />
-      </DocsSection>
+          <div className="mt-6">
+            <Link href="/docs#section-2" className="text-lg text-primary hover:text-primary/80 underline">
+              Not Sure Where To Begin?
+            </Link>
+          </div>
+        </div>
+      </section>
 
-      <DocsSection id="section-2" title="Programming Languages">
-        <p className="mb-4">Different programming languages are good for different things. Some are great for websites, others for mobile apps or data analysis. Here we'll show you the most popular ones and when to use them.</p>
+      {/* HTML Section */}
+      <TutorialSection
+        title="HTML"
+        description="The language for building web pages"
+        bgClass="bg-background"
+        code={`<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Tutorial</title>
+</head>
+<body>
 
-        <h3 id="item-2-1" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">About Computer Languages</h3>
-        <p className="mb-4">Think of programming languages like tools in a toolbox. You use a hammer for nails and a screwdriver for screws. Each language has its strengths and best uses.</p>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
 
-        <h3 id="item-2-3" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Popular Languages</h3>
-        <ul className="list-disc list-inside my-4 space-y-2">
-          <li><strong>Python:</strong> Great for beginners. Used for websites, data science, and automation.</li>
-          <li><strong>JavaScript:</strong> Powers all modern websites. Essential for web development.</li>
-          <li><strong>HTML/CSS:</strong> The building blocks of web pages. HTML for structure, CSS for style.</li>
-          <li><strong>Java:</strong> Popular for big business apps and Android mobile apps.</li>
-        </ul>
+</body>
+</html>`}
+      />
 
-        <h3 id="item-2-3" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Tutorials</h3>
-        <p className="mb-4">Start learning with these free resources:</p>
-        <ul className="list-disc list-inside my-4 space-y-2">
-          <li><a href="https://docs.python.org/3/" className="text-accent hover:text-fire-bright" target="_blank" rel="noopener noreferrer">Python Official Docs</a></li>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" className="text-accent hover:text-fire-bright" target="_blank" rel="noopener noreferrer">JavaScript Guide</a></li>
-          <li><a href="https://www.w3schools.com/" className="text-accent hover:text-fire-bright" target="_blank" rel="noopener noreferrer">W3Schools (HTML/CSS)</a></li>
-        </ul>
-      </DocsSection>
+      {/* CSS Section */}
+      <TutorialSection
+        title="CSS"
+        description="The language for styling web pages"
+        bgClass="bg-card"
+        code={`body {
+  background-color: #f2f2f2;
+}
 
-      <DocsSection id="section-3" title="Deployment">
-        <p className="mb-4">Once you build your website, you need to put it online so others can see it. This is called deployment. Many services let you do this for free, which is perfect when you're learning.</p>
+h1 {
+  color: #ff4500;
+  text-align: center;
+}
 
-        <h3 id="item-3-1" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Custom Domains</h3>
-        <p className="mb-4">A custom domain is your own website name like "mysite.com" instead of "mysite.netlify.app". You have to buy these from companies like Namecheap. They usually cost around $10-15 per year.</p>
+p {
+  font-family: verdana;
+}`}
+      />
 
-        <h3 id="item-3-2" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Fastly</h3>
-        <p className="mb-4">Fastly is a content delivery network that makes websites load faster worldwide. It's more advanced and typically used by bigger companies.</p>
+      {/* JavaScript Section */}
+      <TutorialSection
+        title="JavaScript"
+        description="The language for programming web pages"
+        bgClass="bg-background"
+        code={`function myFunction() {
+  let x = document.getElementById("demo");
+  x.style.fontSize = "25px";
+  x.style.color = "#ff4500";
+}`}
+      />
 
-        <h3 id="item-3-3" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Back4App (b4a.run)</h3>
-        <p className="mb-4">Back4App lets you run more complex apps that need a server. You'll need to create a Dockerfile, which tells the service how to run your app. It has a free tier that's good for testing.</p>
+      {/* Python Section */}
+      <TutorialSection
+        title="Python"
+        description="A popular programming language"
+        bgClass="bg-card"
+        code={`if 5 > 2:
+  print("Five is greater than two!")`}
+      />
 
-        <h3 id="item-3-4" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Vercel (vercel.app)</h3>
-        <p className="mb-4">Vercel is super easy to use. Just connect your GitHub account and it automatically deploys your website whenever you make changes. Perfect for static sites and React apps.</p>
+      {/* Java Section */}
+      <TutorialSection
+        title="Java"
+        description="A general-purpose, object-oriented programming language"
+        bgClass="bg-background"
+        code={`public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("Hello, World!");
+  }
+}`}
+      />
 
-        <h3 id="item-3-5" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Netlify (netlify.app)</h3>
-        <p className="mb-4">Similar to Vercel, Netlify makes deployment simple. Drag and drop your files or connect to GitHub. Great for beginners and has useful features like form handling.</p>
+      {/* Code Editor Section */}
+      <section className="w-full py-16 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-5xl font-bold mb-4">Code Editor</h2>
+          <p className="text-lg mb-8">With our online code editor, you can edit code and view the result in your browser</p>
 
-        <h3 id="item-3-6" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Railway (railway.app)</h3>
-        <p className="mb-4">Railway gives you free credits each month to run your apps. Good for both simple websites and complex apps with databases. Credits refresh monthly but can run out if you use too much.</p>
+          <div className="bg-card rounded-md overflow-hidden shadow-lg max-w-4xl mx-auto">
+            <div className="flex items-center bg-gray-900 px-4 py-2">
+              <div className="flex space-x-2">
+                <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+              </div>
+              <div className="ml-4 flex-1 text-white text-sm font-mono">pyroprogramming.com/tryit</div>
+            </div>
 
-        <h3 id="item-3-7" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Koyeb (koyeb.app)</h3>
-        <p className="mb-4">Koyeb lets you run one free service at a time. Great for testing your apps before deciding if you want to pay for more services.</p>
-      </DocsSection>
+            <div className="flex">
+              <div className="w-1/2 bg-[#1E1E1E] p-4 text-white font-mono text-left border-r border-gray-700">
+                <pre><code>{`<!DOCTYPE html>
+<html>
+<body>
 
-      <DocsSection id="section-4" title="Creating a Website">
-        <p className="mb-4">Building your own website is easier than you think. You can start simple and add features as you learn. Here's everything you need to know to get started.</p>
+<h1 style="color: #ff4500;">Hello World!</h1>
 
-        <h3 id="item-4-1" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">How to obtain games</h3>
-        <p className="mb-4">If you want to add games to your site, look for open-source games on GitHub. Always check the license to make sure you can use them legally.</p>
-        <ol className="list-decimal list-inside my-4 space-y-2">
-          <li>Search GitHub for games with open licenses</li>
-          <li>Download the game files or copy the code</li>
-          <li>Add them to your website project</li>
-        </ol>
+<p>This is a paragraph.</p>
 
-        <h3 id="item-4-2" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">What to learn</h3>
-        <p className="mb-4">Start with these three essential skills: HTML (structure), CSS (styling), and JavaScript (interactivity). Use free resources like Codecademy, YouTube tutorials, or ask AI assistants for help.</p>
+</body>
+</html>`}</code></pre>
+              </div>
+              <div className="w-1/2 p-4 text-left">
+                <h1 className="text-2xl font-bold text-primary mb-4">Hello World!</h1>
+                <p>This is a paragraph.</p>
+              </div>
+            </div>
 
-        <h3 id="item-4-3" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">How to deploy your app</h3>
-        <p className="mb-4">Pick a free hosting service like Netlify, GitHub Pages, or Vercel. Each has different strengths, so try a few to see which you like best.</p>
+            <div className="bg-gray-900 p-3 flex justify-center space-x-4">
+              <Button variant="default" className="bg-primary hover:bg-primary/90 text-white">
+                Try Frontend Editor (HTML/CSS/JS)
+              </Button>
+              <Button variant="outline" className="border-white text-white hover:bg-white/10">
+                Try Backend Editor (Python/PHP/Java/C...)
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <h3 id="item-4-4" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Legal</h3>
-        <p className="mb-4">Always check licenses before using other people's code or games. Most open-source projects tell you exactly how you can use them.</p>
+      {/* Exercises and Quizzes */}
+      <section className="w-full py-16 bg-card">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-5xl font-bold mb-4">Exercises and Quizzes</h2>
+          <p className="text-lg mb-8">Test your skills!</p>
 
-        <h3 id="item-4-5" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Potential Monetization</h3>
-        <p className="mb-4">Once your site gets traffic, you can make money through ads, donations, or sponsorships. Start small and focus on building a good site first.</p>
-      </DocsSection>
-
-      <DocsSection id="section-5" title="Exploits">
-        <p className="mb-4">This section contains community-shared tools and methods for getting around web filters and restrictions. We don't create or endorse these tools. They're shared for educational purposes only.</p>
-        <p className="mb-4">For a broader collection of exploits and tools, see the <a href="https://github.com/wea-f/ByePassHub/tree/main/Exploits" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-fire-bright">ByePassHub Exploits</a> repository.</p>
-
-        <h3 id="item-5-1" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Browser Extensions</h3>
-        <p className="mb-4">These are small add-ons for your browser that can change how websites work. Some can hide your browsing or route traffic through different servers to bypass blocks.</p>
-
-        <h3 id="item-5-2" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Extension Blockers</h3>
-        <p className="mb-4">Tools that stop other browser extensions from running. They can disable filtering software by preventing it from loading or working properly.</p>
-
-        <h3 id="item-5-3" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">ChromeOS Methods</h3>
-        <p className="mb-4">Techniques for Chromebook devices that let you run custom software or access developer features. These often involve special modes like developer mode or recovery mode.</p>
-
-        <p className="mb-4 p-4 bg-card border border-fire-medium rounded-md">
-          <strong>Important:</strong> These tools are shared by the community for educational purposes. We do not recommend using them in school or work environments where they may violate policies.
-        </p>
-      </DocsSection>
-
-      <DocsSection id="section-6" title="FAQs">
-        <p className="mb-4">Here are answers to the most common questions we get. If you don't find what you're looking for, feel free to reach out on our Discord or GitHub.</p>
-
-        <h3 className="text-xl font-semibold text-secondary mt-6 mb-2">How do I start learning programming?</h3>
-        <p className="mb-4">Start with HTML and CSS to build simple web pages. Then learn JavaScript to make them interactive. Practice by building small projects.</p>
-
-        <h3 className="text-xl font-semibold text-secondary mt-6 mb-2">Which programming language should I learn first?</h3>
-        <p className="mb-4">For web development, start with HTML/CSS/JavaScript. For general programming, Python is beginner-friendly and widely used.</p>
-
-        <h3 className="text-xl font-semibold text-secondary mt-6 mb-2">How long does it take to build a website?</h3>
-        <p className="mb-4">A simple website can be built in a few hours. A more complex site with features might take weeks or months, depending on your experience.</p>
-
-        <h3 className="text-xl font-semibold text-secondary mt-6 mb-2">Do I need to pay for hosting?</h3>
-        <p className="mb-4">Not necessarily. Many services offer free hosting for small projects. You only need to pay when you need more features or traffic.</p>
-
-        <h3 className="text-xl font-semibold text-secondary mt-6 mb-2">Can I use the code examples in my projects?</h3>
-        <p className="mb-4">Yes! Our code examples are free to use. Just check any third-party libraries for their specific licenses.</p>
-      </DocsSection>
-    </article>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+            <Button variant="default" className="bg-primary hover:bg-primary/90 text-white p-8 text-xl h-auto">
+              Exercises
+            </Button>
+            <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10 p-8 text-xl h-auto">
+              Quizzes
+            </Button>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
