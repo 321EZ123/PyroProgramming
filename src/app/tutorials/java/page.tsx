@@ -6,19 +6,30 @@ import Link from "next/link";
 export default function JavaTutorialHome() {
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-5xl font-bold mb-6 text-primary">Java Tutorial</h1>
-      <div className="bg-card/50 border border-fire-darker p-6 rounded-md mb-8">
-        <h2 className="text-3xl font-bold mb-4">Learn Java</h2>
-        <p className="text-lg mb-4">
-          Java is a powerful, object-oriented programming language used for building a wide variety of applications.
-        </p>
-        <p className="text-lg mb-4">
-          Our Java tutorial will teach you Java fundamentals, object-oriented programming, data structures, and how to build robust applications.
-        </p>
-        <Button className="bg-primary hover:bg-primary/90 text-white mt-4">
-          <Link href="/tutorials/java/intro">Start learning Java now »</Link>
-        </Button>
-      </div>
+      <h1 className="text-5xl font-bold mb-6 text-primary">Java HOME</h1>
+      <p className="text-lg mb-4">Welcome to the complete Java tutorial series, designed to guide you from the fundamentals to advanced concepts of this versatile programming language.</p>
+      <p className="text-lg mb-4">Our lessons cover everything from setup and syntax to object-oriented programming and data structures.</p>
+      <ul className="list-disc list-inside space-y-2">
+        <li><Link href="/tutorials/java/intro">Introduction to Java</Link></li>
+        <li><Link href="/tutorials/java/get-started">Java Get Started</Link></li>
+        <li><Link href="/tutorials/java/syntax">Java Syntax</Link></li>
+        <li><Link href="/tutorials/java/output">Java Output</Link></li>
+        <li><Link href="/tutorials/java/comments">Java Comments</Link></li>
+        <li><Link href="/tutorials/java/variables">Java Variables</Link></li>
+        <li><Link href="/tutorials/java/data-types">Java Data Types</Link></li>
+        <li><Link href="/tutorials/java/type-casting">Java Type Casting</Link></li>
+        <li><Link href="/tutorials/java/operators">Java Operators</Link></li>
+        <li><Link href="/tutorials/java/strings">Java Strings</Link></li>
+        <li><Link href="/tutorials/java/math">Java Math</Link></li>
+        <li><Link href="/tutorials/java/booleans">Java Booleans</Link></li>
+        <li><Link href="/tutorials/java/if-else">Java If...Else</Link></li>
+        <li><Link href="/tutorials/java/switch">Java Switch</Link></li>
+        <li><Link href="/tutorials/java/while-loop">Java While Loop</Link></li>
+        <li><Link href="/tutorials/java/for-loop">Java For Loop</Link></li>
+        <li><Link href="/tutorials/java/break-continue">Java Break/Continue</Link></li>
+        <li><Link href="/tutorials/java/arrays">Java Arrays</Link></li>
+      </ul>
+      <p className="text-lg mt-6">Feel free to explore the lessons in sequence or jump to topics that interest you most. Continue your Java journey by selecting a topic above!</p>
 
       <div className="mb-10">
         <h2 className="text-3xl font-bold mb-6">Examples in Each Chapter</h2>
