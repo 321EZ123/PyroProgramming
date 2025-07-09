@@ -164,45 +164,15 @@ p {
 }`}
       />
 
-      {/* IDE Guide Section */}
-      <section className="w-full py-16 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-5xl font-bold mb-4">Getting Started with Visual Studio Code</h2>
-          <p className="text-lg mb-8">
-            Visual Studio Code (VS Code) is a free, open-source code editor that supports a variety of programming languages and is highly customizable.
-          </p>
-
-          <h3 className="text-3xl font-semibold mb-4">Installation</h3>
-          <p className="text-md mb-4">
-            To install VS Code, follow these steps:
-          </p>
-          <ol className="list-decimal list-inside mb-4">
-            <li>Visit the <a href="https://code.visualstudio.com/" className="text-primary underline">Visual Studio Code website</a>.</li>
-            <li>Download the version suitable for your operating system (Windows, macOS, or Linux).</li>
-            <li>Run the installer and follow the setup instructions.</li>
-          </ol>
-
-          <h3 className="text-3xl font-semibold mb-4">Basic Features</h3>
-          <p className="text-md mb-4">
-            Some of the key features of VS Code include:
-          </p>
-          <ul className="list-disc list-inside mb-4">
-            <li>Intelligent code completion (IntelliSense)</li>
-            <li>Built-in Git commands</li>
-            <li>Debugging support</li>
-            <li>Extensions for additional functionality (e.g., themes, language support)</li>
-          </ul>
-
-          <h3 className="text-3xl font-semibold mb-4">Getting Help</h3>
-          <p className="text-md mb-4">
-            You can access the integrated documentation and tutorials directly from VS Code by pressing <code>Ctrl + K</code> followed by <code>Ctrl + H</code> (Windows/Linux) or <code>Cmd + K</code> followed by <code>Cmd + H</code> (macOS).
-          </p>
-
-          <p className="text-md mb-4">
-            For more resources, check out the official <a href="https://code.visualstudio.com/docs" className="text-primary underline">VS Code documentation</a>.
-          </p>
-        </div>
-      </section>
+      {/* VS Code Guide Section */}
+      <TutorialSection
+        title="VS Code Guide"
+        description="Getting started with Visual Studio Code, a powerful and free code editor."
+        bgClass="bg-card"
+        code={`1. Download VS Code from https://code.visualstudio.com/\n
+2. Install extensions for your preferred languages.\n
+3. Explore features like IntelliSense and debugging.`}
+      />
 
       {/* Exercises and Quizzes */}
       <section className="w-full py-16 bg-card">
