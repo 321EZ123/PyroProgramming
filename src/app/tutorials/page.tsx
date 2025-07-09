@@ -157,18 +157,6 @@ p {
 }`}
       />
 
-      {/* SQL Section */}
-      <TutorialSection
-        title="Java"
-        description="A powerful, object-oriented programming language"
-        bgClass="bg-background"
-        code={`public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}`}
-      />
-
       {/* Code Editor Section */}
       <section className="w-full py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
