@@ -16,15 +16,13 @@ export default function Page() {
       <p className="text-lg mb-4">
         Use <code>PrintWriter</code> to write output to files:
       </p>
-      <pre className="bg-gray-100 p-4 rounded">
+      <pre className="bg-black text-orange-500 p-4 rounded mb-6">
         <code>
-          <span className="text-black bg-orange-500 block p-2 rounded">
-            {`try (PrintWriter writer = new PrintWriter("output.txt")) {`}
-            <br />
-            {`    writer.println("Hello, File!");`}
-            <br />
-            {`}`}
-          </span>
+          {`try (PrintWriter writer = new PrintWriter("output.txt")) {`}
+          <br />
+          {`    writer.println("Hello, File!");`}
+          <br />
+          {`}`}
         </code>
       </pre>
     </div>
