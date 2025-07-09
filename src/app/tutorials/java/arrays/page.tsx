@@ -9,14 +9,11 @@ export default function Page() {
         An array is a container object that holds a fixed number of values of a single type.
       </p>
       <h2 className="text-3xl font-semibold mb-4">Creating and Initializing Arrays</h2>
-      <pre className="bg-gray-100 p-4 rounded mb-4">
+      <pre className="bg-black text-orange-500 p-4 rounded mb-4">
         <code>
-          <span className="text-black bg-orange-500 block p-2 rounded">
-            {`int[] numbers = new int[5];`}
-          </span>
-          <span className="text-black bg-orange-500 block p-2 rounded">
-            {`String[] names = {"Alice", "Bob", "Charlie"};`}
-          </span>
+          {`int[] numbers = new int[5];`}
+          <br />
+          {`String[] names = {"Alice", "Bob", "Charlie"};`}
         </code>
       </pre>
       <h2 className="text-3xl font-semibold mb-4">Accessing Array Elements</h2>
@@ -24,11 +21,9 @@ export default function Page() {
         Access elements using zero-based indexes: <code>numbers[0]</code> for the first element.
       </p>
       <h2 className="text-3xl font-semibold mb-4">Multidimensional Arrays</h2>
-      <pre className="bg-gray-100 p-4 rounded mb-6">
+      <pre className="bg-black text-orange-500 p-4 rounded mb-6">
         <code>
-          <span className="text-black bg-orange-500 block p-2 rounded">
-            {`int[][] matrix = { {1, 2}, {3, 4} };`}
-          </span>
+          {`int[][] matrix = { {1, 2}, {3, 4} };`}
         </code>
       </pre>
     </div>
