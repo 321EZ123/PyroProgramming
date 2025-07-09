@@ -18,16 +18,15 @@ export default function Page() {
       </p>
       <pre className="bg-gray-100 p-4 rounded">
         <code>
-          try (PrintWriter writer = new PrintWriter("output.txt")) &#123;
-          <br />
-          writer.println("Hello, File!");
-          <br />
-          &#125;
+          <span className="text-black bg-orange-500 block p-2 rounded">
+            {`try (PrintWriter writer = new PrintWriter("output.txt")) {`}
+            <br />
+            {`    writer.println("Hello, File!");`}
+            <br />
+            {`}`}
+          </span>
         </code>
       </pre>
-      <div className="bg-black text-orange-500 p-4 rounded mt-6">
-        <code>use client</code>
-      </div>
     </div>
   );
 }
