@@ -3,6 +3,7 @@
 import TutorialSidebar from "@/components/TutorialSidebar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const javaSidebarItems = [
   { title: "Java HOME", href: "/tutorials/java" },
@@ -31,6 +32,11 @@ export default function SqlLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+  const currentIndex = javaSidebarItems.findIndex(item => item.href === pathname);
+  const prev = currentIndex > 0 ? javaSidebarItems[currentIndex - 1] : null;
+  const next = currentIndex >= 0 && currentIndex < javaSidebarItems.length - 1 ? javaSidebarItems[currentIndex + 1] : null;
+
   return (
     <div className="flex min-h-screen">
       <TutorialSidebar items={javaSidebarItems} language="Java" />
@@ -39,44 +45,48 @@ export default function SqlLayout({
           {children}
         </div>
         <div className="border-t border-fire-darker p-4 flex justify-between items-center">
-          <Button variant="outline" asChild>
-            <Link href="#" className="flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-4 w-4"
-              >
-                <path d="m15 18-6-6 6-6" />
-              </svg>
-              Previous
-            </Link>
-          </Button>
-          <Button variant="outline" asChild>
-            <Link href="#" className="flex items-center gap-2">
-              Next
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-4 w-4"
-              >
-                <path d="m9 18 6-6-6-6" />
-              </svg>
-            </Link>
-          </Button>
+          {prev ? (
+            <Button variant="outline" asChild>
+              <Link href={prev.href} className="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-4 w-4"
+                >
+                  <path d="m15 18-6-6 6-6" />
+                </svg>
+                Previous
+              </Link>
+            </Button>
+          ) : <div />}
+          {next ? (
+            <Button variant="outline" asChild>
+              <Link href={next.href} className="flex items-center gap-2">
+                Next
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-4 w-4"
+                >
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </Link>
+            </Button>
+          ) : <div />}
         </div>
       </main>
     </div>
