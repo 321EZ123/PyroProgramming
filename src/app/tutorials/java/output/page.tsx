@@ -25,6 +25,9 @@ export default function Page() {
           &#125;
         </code>
       </pre>
+      <div className="bg-black text-orange-500 p-4 rounded mt-6">
+        <code>use client</code>
+      </div>
     </div>
   );
 }
