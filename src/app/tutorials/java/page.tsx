@@ -29,7 +29,7 @@ export default function JavaTutorialHome() {
         <li><Link href="/tutorials/java/break-continue">Java Break/Continue</Link></li>
         <li><Link href="/tutorials/java/arrays">Java Arrays</Link></li>
       </ul>
-      <p className="text-lg mt-6">Feel free to explore the lessons in sequence or jump to topics that interest you most. Continue your Java journey by selecting a topic above!</p>
+      <p className="text-lg mt-6 mb-10">Feel free to explore the lessons in sequence or jump to topics that interest you most. Continue your Java journey by selecting a topic above!</p>
 
       <div className="mb-10">
         <h2 className="text-3xl font-bold mb-6">Examples in Each Chapter</h2>
