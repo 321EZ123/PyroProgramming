@@ -11,9 +11,12 @@ export default function Page() {
       <h2 className="text-3xl font-semibold mb-4">Creating and Initializing Arrays</h2>
       <pre className="bg-gray-100 p-4 rounded mb-4">
         <code>
-          {`int[] numbers = new int[5];`}
-          <br />
-          {`String[] names = {"Alice", "Bob", "Charlie"};`}
+          <span className="text-black bg-orange-500 block p-2 rounded">
+            {`int[] numbers = new int[5];`}
+          </span>
+          <span className="text-black bg-orange-500 block p-2 rounded">
+            {`String[] names = {"Alice", "Bob", "Charlie"};`}
+          </span>
         </code>
       </pre>
       <h2 className="text-3xl font-semibold mb-4">Accessing Array Elements</h2>
@@ -23,7 +26,9 @@ export default function Page() {
       <h2 className="text-3xl font-semibold mb-4">Multidimensional Arrays</h2>
       <pre className="bg-gray-100 p-4 rounded mb-6">
         <code>
-          {`int[][] matrix = { {1, 2}, {3, 4} };`}
+          <span className="text-black bg-orange-500 block p-2 rounded">
+            {`int[][] matrix = { {1, 2}, {3, 4} };`}
+          </span>
         </code>
       </pre>
     </div>
