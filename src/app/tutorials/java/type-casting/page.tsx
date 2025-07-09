@@ -12,11 +12,9 @@ export default function Page() {
       <p className="text-lg mb-4">
         Manual conversion required for larger to smaller types, e.g., double to int:
       </p>
-      <pre className="bg-gray-100 p-4 rounded">
+      <pre className="bg-black text-orange-500 p-4 rounded mb-4">
         <code>
-          <span className="text-black bg-orange-500 block p-2 rounded">
-            {`int i = (int) 3.14;`}
-          </span>
+          {`int i = (int) 3.14;`}
         </code>
       </pre>
       <h2 className="text-3xl font-semibold mb-4">Type Casting between Objects</h2>
