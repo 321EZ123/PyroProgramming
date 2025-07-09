@@ -169,13 +169,8 @@ p {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-5xl font-bold mb-4">VS Code Guide</h2>
           <p className="text-lg mb-8">Get started with Visual Studio Code, a powerful and free code editor.</p>
-
-          <div className="bg-[#1E1E1E] rounded-md p-4 text-white font-mono text-sm">
-            <pre>
-              <code>{`1. Download VS Code from https://code.visualstudio.com/
-2. Install extensions for your preferred languages.
-3. Explore features like IntelliSense and debugging.`}</code>
-            </pre>
+          <div className="flex justify-center">
+            <img src="/tutorials/vscode-guide.png" alt="VS Code Guide" className="rounded-md" />
           </div>
         </div>
       </section>
