@@ -170,7 +170,7 @@ p {
           <h2 className="text-5xl font-bold mb-4">VS Code Guide</h2>
           <p className="text-lg mb-8">Get started with Visual Studio Code, a powerful and free code editor.</p>
           <div className="flex justify-center">
-            <img src="/tutorials/vscode-guide.png" alt="VS Code Guide" className="rounded-md" />
+            <img src="/vscode-guide.png" alt="VS Code Guide" className="rounded-md" />
           </div>
         </div>
       </section>
