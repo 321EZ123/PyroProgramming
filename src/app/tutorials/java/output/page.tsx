@@ -5,13 +5,26 @@ export default function Page() {
     <div className="max-w-4xl mx-auto">
       <h1 className="text-5xl font-bold mb-6 text-primary">Java Output</h1>
       <h2 className="text-3xl font-semibold mb-4">Printing to Console</h2>
-      <p className="text-lg mb-4">Use <code>System.out.println()</code> to print lines to the console.</p>
-      <p className="text-lg mb-6">For example:<br/><code>System.out.println("Hello, World!");</code></p>
+      <p className="text-lg mb-4">
+        Use <code>System.out.println()</code> to print lines to the console.
+      </p>
+      <p className="text-lg mb-6">
+        For example:<br />
+        <code>System.out.println("Hello, World!");</code>
+      </p>
       <h2 className="text-3xl font-semibold mb-4">Writing to Files as Output</h2>
-      <p className="text-lg mb-4">Use <code>PrintWriter</code> to write output to files:</p>
-      <pre className="bg-gray-100 p-4 rounded"><code>try (PrintWriter writer = new PrintWriter("output.txt")) {
-    writer.println("Hello, File!");
-}</code></pre>
+      <p className="text-lg mb-4">
+        Use <code>PrintWriter</code> to write output to files:
+      </p>
+      <pre className="bg-gray-100 p-4 rounded">
+        <code>
+          try (PrintWriter writer = new PrintWriter("output.txt")) &#123;
+          <br />
+          writer.println("Hello, File!");
+          <br />
+          &#125;
+        </code>
+      </pre>
     </div>
   );
 }
