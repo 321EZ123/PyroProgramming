@@ -21,7 +21,7 @@ export default function CssSelectors() {
       <h2 className="text-3xl font-semibold mb-4">Combinators</h2>
       <ul className="list-disc pl-6 mb-4">
         <li><strong>Descendant:</strong> selects elements inside another, e.g., <code className="bg-card/50 px-1 rounded">div p</code></li>
-        <li><strong>Child:</strong> selects direct children, e.g., <code className="bg-card/50 px-1 rounded">ul > li</code></li>
+        <li><strong>Child:</strong> selects direct children, e.g., <code className="bg-card/50 px-1 rounded">ul &gt; li</code></li>
         <li><strong>Adjacent sibling:</strong> selects an element directly after another, e.g., <code className="bg-card/50 px-1 rounded">h1 + p</code></li>
       </ul>
 
