@@ -3,6 +3,7 @@
 import TutorialSidebar from "@/components/TutorialSidebar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const htmlSidebarItems = [
   { title: "HTML Home", href: "/tutorials/html" },
@@ -31,6 +32,11 @@ export default function HtmlLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+  const currentIndex = htmlSidebarItems.findIndex(item => item.href === pathname);
+  const prevItem = currentIndex > 0 ? htmlSidebarItems[currentIndex - 1] : null;
+  const nextItem = currentIndex < htmlSidebarItems.length - 1 ? htmlSidebarItems[currentIndex + 1] : null;
+
   return (
     <div className="flex min-h-screen">
       <TutorialSidebar items={htmlSidebarItems} language="HTML" />
@@ -39,44 +45,60 @@ export default function HtmlLayout({
           {children}
         </div>
         <div className="border-t border-fire-darker p-4 flex justify-between items-center">
-          <Button variant="outline" asChild>
-            <Link href="#" className="flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-4 w-4"
-              >
-                <path d="m15 18-6-6 6-6" />
-              </svg>
-              Previous
-            </Link>
-          </Button>
-          <Button variant="outline" asChild>
-            <Link href="#" className="flex items-center gap-2">
-              Next
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-4 w-4"
-              >
-                <path d="m9 18 6-6-6-6" />
-              </svg>
-            </Link>
-          </Button>
+          {prevItem ? (
+            <Button variant="outline" asChild>
+              <Link href={prevItem.href} className="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-4 w-4"
+                >
+                  <path d="m15 18-6-6 6-6" />
+                </svg>
+                Previous
+              </Link>
+            </Button>
+          ) : (
+            <Button variant="outline" disabled className="opacity-50 pointer-events-none">
+              <span className="flex items-center gap-2">
+                Previous
+              </span>
+            </Button>
+          )}
+          {nextItem ? (
+            <Button variant="outline" asChild>
+              <Link href={nextItem.href} className="flex items-center gap-2">
+                Next
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-4 w-4"
+                >
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </Link>
+            </Button>
+          ) : (
+            <Button variant="outline" disabled className="opacity-50 pointer-events-none">
+              <span className="flex items-center gap-2">
+                Next
+              </span>
+            </Button>
+          )}
         </div>
       </main>
     </div>
