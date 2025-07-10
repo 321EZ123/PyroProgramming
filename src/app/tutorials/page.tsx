@@ -164,13 +164,49 @@ p {
 }`}
       />
 
-      {/* VS Code Guide Section */}
-      <section className="w-full py-16 bg-card">
+      {/* Code Editor Section */}
+      <section className="w-full py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-5xl font-bold mb-4">VS Code Guide</h2>
-          <p className="text-lg mb-8">Get started with Visual Studio Code, a powerful and free code editor.</p>
-          <div className="flex justify-center">
-            <img src="/vscode-guide.png" alt="VS Code Guide" className="rounded-md" />
+          <h2 className="text-5xl font-bold mb-4">Code Editor</h2>
+          <p className="text-lg mb-8">With our online code editor, you can edit code and view the result in your browser</p>
+
+          <div className="bg-card rounded-md overflow-hidden shadow-lg max-w-4xl mx-auto">
+            <div className="flex items-center bg-gray-900 px-4 py-2">
+              <div className="flex space-x-2">
+                <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+              </div>
+              <div className="ml-4 flex-1 text-white text-sm font-mono">pyroprogramming.com/tryit</div>
+            </div>
+
+            <div className="flex">
+              <div className="w-1/2 bg-[#1E1E1E] p-4 text-white font-mono text-left border-r border-gray-700">
+                <pre><code>{`<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color: #ff4500;">Hello World!</h1>
+
+<p>This is a paragraph.</p>
+
+</body>
+</html>`}</code></pre>
+              </div>
+              <div className="w-1/2 p-4 text-left">
+                <h1 className="text-2xl font-bold text-primary mb-4">Hello World!</h1>
+                <p>This is a paragraph showcasing how HTML elements can be styled using inline CSS. Experiment with the color and style to see instant changes!</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-900 p-3 flex justify-center space-x-4">
+              <Button variant="default" className="bg-primary hover:bg-primary/90 text-white">
+                Try Frontend Editor (HTML/CSS/JS)
+              </Button>
+              <Button variant="outline" className="border-white text-white hover:bg-white/10">
+                Try Backend Editor (Python/PHP/Java/C...)
+              </Button>
+            </div>
           </div>
         </div>
       </section>
