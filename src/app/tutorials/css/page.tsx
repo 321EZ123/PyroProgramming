@@ -1,180 +1,91 @@
 "use client";
 
+import TutorialSidebar from "@/components/TutorialSidebar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-export default function CssTutorialHome() {
+const cssSidebarItems = [
+  { title: "CSS Home", href: "/tutorials/css" },
+  { title: "CSS Introduction", href: "/tutorials/css/intro" },
+  { title: "CSS Syntax", href: "/tutorials/css/syntax" },
+  { title: "CSS Selectors", href: "/tutorials/css/selectors" },
+  { title: "CSS How To", href: "/tutorials/css/howto" },
+  { title: "CSS Comments", href: "/tutorials/css/comments" },
+  { title: "CSS Colors", href: "/tutorials/css/colors" },
+  { title: "CSS Backgrounds", href: "/tutorials/css/backgrounds" },
+  { title: "CSS Borders", href: "/tutorials/css/borders" },
+  { title: "CSS Margins", href: "/tutorials/css/margins" },
+  { title: "CSS Padding", href: "/tutorials/css/padding" },
+  { title: "CSS Height/Width", href: "/tutorials/css/dimension" },
+  { title: "CSS Box Model", href: "/tutorials/css/boxmodel" },
+  { title: "CSS Text", href: "/tutorials/css/text" },
+  { title: "CSS Fonts", href: "/tutorials/css/fonts" },
+  { title: "CSS Icons", href: "/tutorials/css/icons" },
+  { title: "CSS Links", href: "/tutorials/css/links" },
+  { title: "CSS Lists", href: "/tutorials/css/lists" },
+  { title: "CSS Tables", href: "/tutorials/css/tables" },
+  { title: "CSS Display", href: "/tutorials/css/display" },
+];
+
+export default function CssLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const pathname = usePathname();
+  const currentIndex = cssSidebarItems.findIndex(item => item.href === pathname);
+  const prevItem = currentIndex > 0 ? cssSidebarItems[currentIndex - 1] : null;
+  const nextItem = currentIndex < cssSidebarItems.length - 1 ? cssSidebarItems[currentIndex + 1] : null;
+
   return (
-    <div className="max-w-4xl mx-auto">
-      <h1 className="text-5xl font-bold mb-6 text-primary">CSS Tutorial</h1>
-
-      <div className="bg-card/50 border border-fire-darker p-6 rounded-md mb-8">
-        <h2 className="text-3xl font-bold mb-4">Learn CSS</h2>
-        <p className="text-lg mb-4">
-          CSS is the language we use to style an HTML document.
-        </p>
-        <p className="text-lg mb-4">
-          CSS describes how HTML elements should be displayed.
-        </p>
-        <p className="text-lg mb-4">
-          This tutorial will teach you CSS from basic to advanced.
-        </p>
-        <Button className="bg-primary hover:bg-primary/90 text-white mt-4">
-          <Link href="/tutorials/css/intro">Start learning CSS now »</Link>
-        </Button>
-      </div>
-
-      <div className="mb-10">
-        <h2 className="text-3xl font-bold mb-6">Examples in Each Chapter</h2>
-        <p className="text-lg mb-4">
-          This CSS tutorial contains hundreds of CSS examples.
-        </p>
-        <p className="text-lg mb-4">
-          With our online editor, you can edit the CSS, and click on a button to view the result.
-        </p>
-
-        <div className="bg-[#1E1E1E] rounded-md overflow-hidden shadow-lg mb-6">
-          <div className="bg-card p-4 border-b border-fire-darker">
-            <h3 className="text-lg font-semibold">Example:</h3>
-          </div>
-          <div className="p-4 text-white font-mono text-sm">
-            <pre className="language-css">
-              <code>{`body {
-  background-color: #111827;
-  color: white;
-  font-family: Arial, sans-serif;
-}
-
-h1 {
-  color: #ff4500;
-  text-align: center;
-}
-
-p {
-  font-family: Verdana, sans-serif;
-  margin: 20px;
-}`}</code>
-            </pre>
-          </div>
-          <div className="bg-card p-3 flex justify-center">
-            <Button variant="default" className="bg-primary hover:bg-primary/90 text-white">
-              Try it Yourself
-            </Button>
-          </div>
+    <div className="flex min-h-screen">
+      <TutorialSidebar items={cssSidebarItems} language="CSS" />
+      <main className="flex-1">
+        <div className="p-6">
+          {children}
         </div>
-
-        <p className="text-lg">
-          Click on the "Try it Yourself" button to see how it works.
-        </p>
-      </div>
-
-      <div className="mb-10">
-        <h2 className="text-3xl font-bold mb-6">CSS Example</h2>
-        <p className="text-lg mb-4">
-          Learn from over 300 examples! With our editor, you can edit the CSS, and click on a button to view the result.
-        </p>
-
-        <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10">
-          <Link href="/tutorials/css/examples">Go to CSS Examples</Link>
-        </Button>
-      </div>
-
-      <div className="mb-10">
-        <h2 className="text-3xl font-bold mb-6">CSS Exercises</h2>
-        <p className="text-lg mb-4">
-          Test your CSS skills at PyroProgramming!
-        </p>
-
-        <div className="bg-card border border-fire-darker rounded-md p-6 mb-6">
-          <h3 className="text-xl font-bold mb-4">Exercise:</h3>
-          <p className="mb-4">Set the color of all p elements to "red":</p>
-
-          <div className="bg-[#1E1E1E] p-4 text-white font-mono text-sm rounded mb-4">
-            <pre className="language-css">
-              <code>{`p {
-  ___: red;
-}`}</code>
-            </pre>
-          </div>
-
-          <Button className="bg-primary hover:bg-primary/90 text-white">
-            Submit Answer »
+        <div className="border-t border-fire-darker p-4 flex justify-between items-center">
+          <Button variant="outline" asChild disabled={!prevItem}>
+            <Link href={prevItem?.href ?? "#"} className="flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-4 w-4"
+              >
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+              Previous
+            </Link>
+          </Button>
+          <Button variant="outline" asChild disabled={!nextItem}>
+            <Link href={nextItem?.href ?? "#"} className="flex items-center gap-2">
+              Next
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-4 w-4"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </Link>
           </Button>
         </div>
-
-        <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10">
-          <Link href="/tutorials/css/exercises">Start CSS Exercises</Link>
-        </Button>
-      </div>
-
-      <div className="mb-10">
-        <h2 className="text-3xl font-bold mb-6">CSS Quiz</h2>
-        <p className="text-lg mb-4">
-          Test your CSS skills with our CSS Quiz!
-        </p>
-        <Button className="bg-primary hover:bg-primary/90 text-white">
-          <Link href="/tutorials/css/quiz">Start CSS Quiz</Link>
-        </Button>
-      </div>
-
-      <div className="mb-10">
-        <h2 className="text-3xl font-bold mb-6">CSS References</h2>
-        <p className="text-lg mb-4">
-          At PyroProgramming you will find complete CSS references of all properties and selectors with syntax, examples, browser support, and more:
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10 py-3 h-auto">
-            CSS Properties Reference
-          </Button>
-          <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10 py-3 h-auto">
-            CSS Selectors Reference
-          </Button>
-          <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10 py-3 h-auto">
-            CSS Functions Reference
-          </Button>
-          <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10 py-3 h-auto">
-            CSS Animatable Reference
-          </Button>
-          <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10 py-3 h-auto">
-            CSS Aural Reference
-          </Button>
-          <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10 py-3 h-auto">
-            CSS Web Safe Fonts
-          </Button>
-          <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10 py-3 h-auto">
-            CSS Color References
-          </Button>
-          <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10 py-3 h-auto">
-            CSS Default Values
-          </Button>
-        </div>
-      </div>
-
-      <div className="bg-card/50 border border-fire-darker p-6 rounded-md mb-8">
-        <h2 className="text-3xl font-bold mb-4">Kickstart your career</h2>
-        <p className="text-lg mb-4">
-          Get certified by completing the CSS course
-        </p>
-        <Button className="bg-primary hover:bg-primary/90 text-white mt-2">
-          Learn More
-        </Button>
-      </div>
-
-      <div className="mb-10">
-        <h2 className="text-3xl font-bold mb-6">Video: CSS Crash Course</h2>
-        <div className="bg-[#1E1E1E] rounded-md overflow-hidden">
-          <div className="p-8 text-center text-white">
-            <div className="inline-block bg-primary text-white text-3xl font-bold p-4 mb-4">
-              CSS Crash Course
-            </div>
-            <p className="text-xl mb-4">in just 35 minutes</p>
-            <Button className="bg-primary hover:bg-primary/90 text-white">
-              Watch Video
-            </Button>
-          </div>
-        </div>
-      </div>
+      </main>
     </div>
   );
 }
