@@ -67,19 +67,16 @@ export default function HtmlTutorialHome() {
         <p className="text-lg mb-4">
           In this HTML tutorial, you will find more than 200 examples. With our online editor, you can edit the HTML code and view the result.
         </p>
-        <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10">
-          <Link href="/tutorials/html/examples">Go to HTML Examples</Link>
-        </Button>
       </div>
 
       <div className="mb-10">
         <h2 className="text-3xl font-bold mb-6">HTML Exercises</h2>
         <p className="text-lg mb-4">
-          This HTML tutorial also contains nearly 100 HTML exercises.
+          This HTML tutorial also contains many HTML exercises.
         </p>
 
         <div className="bg-card border border-fire-darker rounded-md p-6 mb-6">
-          <h3 className="text-xl font-bold mb-4">Exercise:</h3>
+          <h3 className="text-xl font-bold mb-4">Example Exercise:</h3>
           <p className="mb-4">Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
 
           <div className="bg-[#1E1E1E] p-4 text-white font-mono text-sm rounded mb-4">
@@ -109,9 +106,9 @@ export default function HtmlTutorialHome() {
       </div>
 
       <div className="mb-10">
-        <h2 className="text-3xl font-bold mb-6">HTML References</h2>
+        <h2 className="text-3xl font-bold mb-6">HTML Examples</h2>
         <p className="text-lg mb-4">
-          At PyroProgramming you will find complete references about HTML elements, attributes, events, color names, entities, character-sets, URL encoding, language codes, HTTP messages, and more:
+          At PyroProgramming you will find complete examples about HTML elements, attributes, events, color names, entities, character-sets, URL encoding, language codes, HTTP messages, and more:
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -148,7 +145,7 @@ export default function HtmlTutorialHome() {
       <div className="bg-card/50 border border-fire-darker p-6 rounded-md mb-8">
         <h2 className="text-3xl font-bold mb-4">Kickstart your career</h2>
         <p className="text-lg mb-4">
-          Get certified by completing the HTML course
+          Learn HTML and begin your coding career.
         </p>
         <Button className="bg-primary hover:bg-primary/90 text-white mt-2">
           Learn More
