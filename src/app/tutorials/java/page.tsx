@@ -34,7 +34,7 @@ export default function JavaTutorialHome() {
       <div className="mb-10">
         <h2 className="text-3xl font-bold mb-6">Examples in Each Chapter</h2>
         <p className="text-lg mb-4">
-          With our online Java editor, you can edit the Java code, and click on a button to view the result.
+          In each chapter, we have included examples of the topics discussed. This enhances your understanding of the topic and gives you a refrence to base your code on.
         </p>
         <div className="bg-[#1E1E1E] rounded-md overflow-hidden shadow-lg mb-6">
           <div className="bg-[#2D2D2D] p-3 border-b border-gray-600">
@@ -50,9 +50,6 @@ export default function JavaTutorialHome() {
             </pre>
           </div>
         </div>
-        <Button className="bg-orange-600 hover:bg-orange-700 text-white">
-          Try it Yourself »
-        </Button>
       </div>
 
       <div className="mb-10">
@@ -60,13 +57,9 @@ export default function JavaTutorialHome() {
         <p className="text-lg mb-4">
           Test yourself with exercises and quizzes to improve your Java skills.
         </p>
-      </div>
-
-      <div className="mb-10">
-        <h2 className="text-3xl font-bold mb-6">Java Reference</h2>
-        <p className="text-lg mb-4">
-          We have created a complete Java reference guide with syntax, examples, and documentation for all Java classes and methods.
-        </p>
+        <Button className="bg-primary hover:bg-primary/90 text-white">
+          Go Nowhere »
+        </Button>
       </div>
 
       <div className="mb-10">
