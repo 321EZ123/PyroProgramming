@@ -1,9 +1,6 @@
 "use client";
 
 export default function CssSelectors() {
-  const exampleCode = `/* Descendant selector */
-div p { margin: 10px; }`;
-
   return (
     <div className="max-w-4xl mx-auto">
       <h1 className="text-4xl font-bold mb-6 text-primary">CSS Selectors</h1>
@@ -31,7 +28,17 @@ div p { margin: 10px; }`;
       <h2 className="text-3xl font-semibold mb-4">Examples</h2>
       <div className="bg-[#1E1E1E] rounded-md p-4 mb-6">
         <pre className="text-white font-mono text-sm">
-          <code>{exampleCode}</code>
+          <code>{`/* Element selector */
+p { color: green; }
+
+/* Class selector */
+.example { font-weight: bold; }
+
+/* ID selector */
+#header { background: #333; }
+
+/* Descendant selector */
+div p { margin: 10px; }`}</code>
         </pre>
       </div>
     </div>
