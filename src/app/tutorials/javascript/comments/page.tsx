@@ -6,8 +6,12 @@ export default function JsComments() {
       <h1 className="text-4xl font-bold mb-6 text-primary">JS Comments</h1>
       <h2 className="text-3xl font-semibold mb-4">Types of Comments</h2>
       <ul className="list-disc pl-6 mb-4 text-lg">
-        <li>Single-line comments: <code className="bg-card/50 px-1 rounded">// This is a comment</code></li>
-        <li>Multi-line comments: <code className="bg-card/50 px-1 rounded">/* Comment block */</code></li>
+        <li>
+          Single-line comments: <code className="bg-card/50 px-1 rounded">// This is a comment</code>
+        </li>
+        <li>
+          Multi-line comments: <code className="bg-card/50 px-1 rounded">/* Comment block */</code>
+        </li>
       </ul>
 
       <h2 className="text-3xl font-semibold mb-4">Best Practices</h2>
