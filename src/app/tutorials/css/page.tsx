@@ -33,7 +33,7 @@ interface CssLayoutProps {
   children: ReactNode;
 }
 
-const CssLayout: React.FC<CssLayoutProps> = ({ children }) => {
+export default function CssLayout({ children }: CssLayoutProps) {
   const pathname = usePathname();
   const currentIndex = cssSidebarItems.findIndex(item => item.href === pathname);
   const prevItem = currentIndex > 0 ? cssSidebarItems[currentIndex - 1] : null;
@@ -43,9 +43,7 @@ const CssLayout: React.FC<CssLayoutProps> = ({ children }) => {
     <div className="flex min-h-screen">
       <TutorialSidebar items={cssSidebarItems} language="CSS" />
       <main className="flex-1">
-        <div className="p-6">
-          {children}
-        </div>
+        <div className="p-6">{children}</div>
         <div className="border-t border-fire-darker p-4 flex justify-between items-center">
           <Button variant="outline" asChild disabled={!prevItem}>
             <Link href={prevItem?.href ?? "#"} className="flex items-center gap-2">
@@ -67,6 +65,4 @@ const CssLayout: React.FC<CssLayoutProps> = ({ children }) => {
       </main>
     </div>
   );
-};
-
-export default CssLayout;
+}
