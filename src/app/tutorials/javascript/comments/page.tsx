@@ -10,7 +10,7 @@ export default function JsComments() {
           Single-line comments: <code className="bg-card/50 px-1 rounded">// This is a comment</code>
         </li>
         <li>
-          Multi-line comments: <code className="bg-card/50 px-1 rounded">/* Comment block */</code>
+          Multi-line comments: <code className="bg-card/50 px-1 rounded">{`/* Comment block */`}</code>
         </li>
       </ul>
 
