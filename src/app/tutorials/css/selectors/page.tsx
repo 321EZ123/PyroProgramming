@@ -2,7 +2,11 @@
 
 import React from 'react';
 
-const CssSelectors: React.FC = () => {
+interface CssSelectorsProps {
+  children?: React.ReactNode; // Define children prop if needed
+}
+
+const CssSelectors: React.FC<CssSelectorsProps> = ({ children }) => {
   return (
     <div className="max-w-4xl mx-auto">
       <h1 className="text-4xl font-bold mb-6 text-primary">CSS Selectors</h1>
@@ -57,6 +61,8 @@ p { color: green; }
 div p { margin: 10px; }`}</code>
         </pre>
       </div>
+
+      {children} {/* Render children if provided */}
     </div>
   );
 };
