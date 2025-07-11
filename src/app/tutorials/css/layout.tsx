@@ -3,6 +3,7 @@
 import TutorialSidebar from "@/components/TutorialSidebar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const cssSidebarItems = [
   { title: "CSS Home", href: "/tutorials/css" },
@@ -32,6 +33,11 @@ export default function CssLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+  const currentIndex = cssSidebarItems.findIndex(item => item.href === pathname);
+  const prevItem = currentIndex > 0 ? cssSidebarItems[currentIndex - 1] : null;
+  const nextItem = currentIndex < cssSidebarItems.length - 1 ? cssSidebarItems[currentIndex + 1] : null;
+
   return (
     <div className="flex min-h-screen">
       <TutorialSidebar items={cssSidebarItems} language="CSS" />
@@ -40,8 +46,8 @@ export default function CssLayout({
           {children}
         </div>
         <div className="border-t border-fire-darker p-4 flex justify-between items-center">
-          <Button variant="outline" asChild>
-            <Link href="#" className="flex items-center gap-2">
+          <Button variant="outline" asChild disabled={!prevItem}>
+            <Link href={prevItem?.href ?? "#"} className="flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -59,8 +65,8 @@ export default function CssLayout({
               Previous
             </Link>
           </Button>
-          <Button variant="outline" asChild>
-            <Link href="#" className="flex items-center gap-2">
+          <Button variant="outline" asChild disabled={!nextItem}>
+            <Link href={nextItem?.href ?? "#"} className="flex items-center gap-2">
               Next
               <svg
                 xmlns="http://www.w3.org/2000/svg"
