@@ -5,13 +5,12 @@ export default function JsStrings() {
     <div className="max-w-4xl mx-auto">
       <h1 className="text-4xl font-bold mb-6 text-primary">JS Strings</h1>
       <h2 className="text-3xl font-semibold mb-4">String Basics</h2>
-      {/* Fixed: Escaped template literal syntax */}
       <p className="text-lg mb-4">
         Strings can be defined with single quotes, double quotes, or template literals: 
         <code className="bg-card/50 px-1 rounded">{"`Hello ${name}`"}</code>.
       </p>
 
-      <h2 className="text-3xl font-semibold mb-4">Common String Methods</p>
+      <h2 className="text-3xl font-semibold mb-4">Common String Methods</h2> {/* Fixed closing tag */}
       <ul className="list-disc pl-6 mb-4 text-lg">
         <li><code className="bg-card/50 px-1 rounded">length</code></li>
         <li><code className="bg-card/50 px-1 rounded">concat</code></li>
