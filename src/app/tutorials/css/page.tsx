@@ -4,7 +4,7 @@ import TutorialSidebar from "@/components/TutorialSidebar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ReactNode } from "react"; 
+import { ReactNode } from "react";
 
 const cssSidebarItems = [
   { title: "CSS Home", href: "/tutorials/css" },
@@ -30,10 +30,10 @@ const cssSidebarItems = [
 ];
 
 interface CssLayoutProps {
-  children: ReactNode; // Define the props interface
+  children: ReactNode;
 }
 
-export default function CssLayout({ children }: CssLayoutProps) { // Use the interface
+const CssLayout: React.FC<CssLayoutProps> = ({ children }) => {
   const pathname = usePathname();
   const currentIndex = cssSidebarItems.findIndex(item => item.href === pathname);
   const prevItem = currentIndex > 0 ? cssSidebarItems[currentIndex - 1] : null;
@@ -67,4 +67,6 @@ export default function CssLayout({ children }: CssLayoutProps) { // Use the int
       </main>
     </div>
   );
-}
+};
+
+export default CssLayout;
