@@ -34,7 +34,7 @@ export default function JavaTutorialHome() {
       <div className="mb-10">
         <h2 className="text-3xl font-bold mb-6">Examples in Each Chapter</h2>
         <p className="text-lg mb-4">
-          In each chapter, we have included examples of the topics discussed. This enhances your understanding of the topic and gives you a refrence to base your code on.
+          In each chapter, we have included examples of the topics discussed. This enhances your understanding of the topic and gives you a reference to base your code on.
         </p>
         <div className="bg-[#1E1E1E] rounded-md overflow-hidden shadow-lg mb-6">
           <div className="bg-[#2D2D2D] p-3 border-b border-gray-600">
@@ -53,36 +53,36 @@ export default function JavaTutorialHome() {
       </div>
 
       <div className="mb-10">
-        <h2 className="text-3xl font-bold mb-6">Java Exercises</h2>
+        <h2 className="text-3xl font-bold mb-6">Java Community and Resources</h2>
         <p className="text-lg mb-4">
-          Test yourself with exercises and quizzes to improve your Java skills.
+          Join the vibrant Java community to enhance your learning experience. Participate in forums, attend meetups, and contribute to open-source projects.
         </p>
-        <Button className="bg-primary hover:bg-primary/90 text-white">
-          Go Nowhere »
-        </Button>
+        <p className="text-lg mb-4">
+          Here are some resources to help you on your Java journey:
+        </p>
+        <ul className="list-disc list-inside mb-4">
+          <li><Link href="https://www.oracle.com/java/technologies/javase-downloads.html">Official Java Documentation</Link></li>
+          <li><Link href="https://stackoverflow.com/questions/tagged/java">Java on Stack Overflow</Link></li>
+          <li><Link href="https://www.javacodegeeks.com/">Java Code Geeks</Link></li>
+          <li><Link href="https://www.javatpoint.com/">JavaTpoint Tutorials</Link></li>
+        </ul>
       </div>
 
       <div className="mb-10">
-        <h2 className="text-3xl font-bold mb-6">Java Quiz</h2>
+        <h2 className="text-3xl font-bold mb-6">Next Steps</h2>
         <p className="text-lg mb-4">
-          Test your Java skills with a quiz. You will get 1 point for each correct answer. Good luck!
+          Once you've mastered the basics, consider diving into more advanced topics such as:
         </p>
-        <Button className="bg-primary hover:bg-primary/90 text-white">
-          Start Java Quiz »
-        </Button>
-      </div>
-
-      <div className="mb-8 bg-card/50 border border-fire-darker p-6 rounded-md">
-        <h2 className="text-3xl font-bold mb-4">My Learning</h2>
+        <ul className="list-disc list-inside mb-6">
+          <li>Design Patterns</li>
+          <li>Java Frameworks (Spring, Hibernate)</li>
+          <li>Web Development with Java (Servlets, JSP)</li>
+          <li>Building RESTful APIs</li>
+          <li>Java for Mobile Development (Android)</li>
+        </ul>
         <p className="text-lg mb-4">
-          Track your progress with the free "My Learning" program here at Pyro Programming.
+          Continue your Java journey with the resources and lessons offered here!
         </p>
-        <p className="text-lg mb-4">
-          Log in to your account, and start earning points!
-        </p>
-        <Button className="bg-primary hover:bg-primary/90 text-white mt-4">
-          Get Started »
-        </Button>
       </div>
     </div>
   );
