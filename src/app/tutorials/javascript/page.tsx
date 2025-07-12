@@ -44,14 +44,20 @@ export default function JavaScriptTutorialHome() {
 }`}</code>
             </pre>
           </div>
+          <div className="bg-card p-3 flex justify-center">
+            <Button 
+              variant="default" 
+              className="bg-primary hover:bg-primary/90 text-white"
+              onClick={() => window.location.href = "https://pyroprogramming-ide.9p.al/"}
+            >
+              Try it Yourself
+            </Button>
+          </div>
         </div>
 
         <p className="text-lg">
           Click the button below to try it out yourself!
         </p>
-        <Button variant="default" className="bg-primary hover:bg-primary/90 text-white">
-          Try it Yourself
-        </Button>
       </div>
 
       <div className="mb-10">
