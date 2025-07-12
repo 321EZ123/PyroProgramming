@@ -210,23 +210,6 @@ p {
           </div>
         </div>
       </section>
-
-      {/* Exercises and Quizzes */}
-      <section className="w-full py-16 bg-card">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-5xl font-bold mb-4">Exercises and Quizzes</h2>
-          <p className="text-lg mb-8">Test your skills!</p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-            <Button variant="default" className="bg-primary hover:bg-primary/90 text-white p-8 text-xl h-auto">
-              Exercises
-            </Button>
-            <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10 p-8 text-xl h-auto">
-              Quizzes
-            </Button>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
