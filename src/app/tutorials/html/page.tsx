@@ -70,45 +70,9 @@ export default function HtmlTutorialHome() {
       </div>
 
       <div className="mb-10">
-        <h2 className="text-3xl font-bold mb-6">HTML Exercises</h2>
+        <h2 className="text-3xl font-bold mb-6">HTML Elements</h2>
         <p className="text-lg mb-4">
-          This HTML tutorial also contains many HTML exercises.
-        </p>
-
-        <div className="bg-card border border-fire-darker rounded-md p-6 mb-6">
-          <h3 className="text-xl font-bold mb-4">Example Exercise:</h3>
-          <p className="mb-4">Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
-
-          <div className="bg-[#1E1E1E] p-4 text-white font-mono text-sm rounded mb-4">
-            <pre className="language-html">
-              <code>{`<p title="About PyroProgramming">PyroProgramming is a web developer's platform.</p>`}</code>
-            </pre>
-          </div>
-
-          <Button className="bg-primary hover:bg-primary/90 text-white">
-            Submit Answer »
-          </Button>
-        </div>
-
-        <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10">
-          <Link href="/tutorials/html/exercises">Start HTML Exercises</Link>
-        </Button>
-      </div>
-
-      <div className="mb-10">
-        <h2 className="text-3xl font-bold mb-6">HTML Quiz Test</h2>
-        <p className="text-lg mb-4">
-          Test your HTML skills with our HTML Quiz!
-        </p>
-        <Button className="bg-primary hover:bg-primary/90 text-white">
-          <Link href="/tutorials/html/quiz">Start HTML Quiz</Link>
-        </Button>
-      </div>
-
-      <div className="mb-10">
-        <h2 className="text-3xl font-bold mb-6">HTML Examples</h2>
-        <p className="text-lg mb-4">
-          At PyroProgramming you will find complete examples about HTML elements, attributes, events, color names, entities, character-sets, URL encoding, language codes, HTTP messages, and more:
+          At PyroProgramming you will find complete examples about HTML elements, attributes, events, color names, entities, character sets, URL encoding, language codes, HTTP messages, and more:
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -142,16 +106,6 @@ export default function HtmlTutorialHome() {
         </div>
       </div>
 
-      <div className="bg-card/50 border border-fire-darker p-6 rounded-md mb-8">
-        <h2 className="text-3xl font-bold mb-4">Kickstart your career</h2>
-        <p className="text-lg mb-4">
-          Learn HTML and begin your coding career.
-        </p>
-        <Button className="bg-primary hover:bg-primary/90 text-white mt-2">
-          Learn More
-        </Button>
-      </div>
-
       <div className="mb-10">
         <h2 className="text-3xl font-bold mb-6">Video: HTML for Beginners</h2>
         <div className="bg-[#1E1E1E] rounded-md overflow-hidden">
@@ -159,10 +113,11 @@ export default function HtmlTutorialHome() {
             <div className="inline-block bg-primary text-white text-3xl font-bold p-4 mb-4">
               HTML for Beginners
             </div>
-            <p className="text-xl mb-4">in just 45 minutes</p>
+            <p className="text-xl mb-4">in just 1 hour</p>
             <Button className="bg-primary hover:bg-primary/90 text-white">
-              Watch Video
+              <Link href="https://www.youtube.com/watch?v=HD13eq_Pmp8">Watch Video</Link>
             </Button>
+            <p className="text-sm mt-2">We are not affiliated with YouTube or the creator of the video.</p>
           </div>
         </div>
       </div>
