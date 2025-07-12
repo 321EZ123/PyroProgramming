@@ -10,7 +10,7 @@ export default function Page() {
       <ul className="list-disc pl-6 mb-4 text-lg">
         <li>Addition, subtraction, multiplication, division.</li>
         <li>
-          Floor division (<code className="bg-card/50 px-1 rounded">//</code>), exponentiation (<code className="bg-card/50 px-1 rounded">**</code>).
+          Floor division (<code className="bg-card/50 px-1 rounded">{'//'}</code>), exponentiation (<code className="bg-card/50 px-1 rounded">**</code>).
         </li>
       </ul>
       <h2 className="text-3xl font-semibold mb-4">Examples</h2>
