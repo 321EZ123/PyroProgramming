@@ -95,7 +95,7 @@ export default function DocsPage() {
 
         <h3 id="item-2-3" className="text-2xl font-semibold text-secondary mt-8 mb-3 scroll-mt-20">Popular Languages</h3>
         <ul className="list-disc list-inside my-4 space-y-2">
-          <li><strong>Python:</strong> Great for beginners. Used for websites, data science, and automation.</li>
+          <li><strong>Python:</strong> Great for beginners and has easier syntax (good if you don't want to memorize syntax rules). Used for websites, data science, and automation. Much slower than languages like Java though.</li>
           <li><strong>JavaScript:</strong> Powers all modern websites. Essential for web development.</li>
           <li><strong>HTML/CSS:</strong> The building blocks of web pages. HTML for structure, CSS for style.</li>
           <li><strong>Java:</strong> Popular for big business apps and Android mobile apps.</li>
