@@ -86,15 +86,12 @@ print(fahrenheit_to_celsius(100))`}</code>
           <li><strong>NumPy:</strong> A fundamental package for scientific computing with Python.</li>
           <li><strong>TensorFlow:</strong> An open-source framework for machine learning and artificial intelligence.</li>
         </ul>
-        <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10">
-          <Link href="/tutorials/python/libraries">Discover More Libraries</Link>
-        </Button>
       </div>
 
       <div className="bg-card/50 border border-fire-darker p-6 rounded-md mb-8">
         <h2 className="text-3xl font-bold mb-4">Kickstart your career</h2>
         <p className="text-lg mb-4">
-          Get certified by completing the Python course.
+          Learn essential Python skills by completing our Python course. 
         </p>
         <Button className="bg-primary hover:bg-primary/90 text-white mt-2">
           Learn More
