@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 export const metadata: Metadata = {
   title: "PyroProgramming - Dark Fire Docs",
   description: "Documentation site with a dark fire theme.",
+  icons: {
+    icon: '/favicon.svg'
+  },
 };
 
 export default function RootLayout({
