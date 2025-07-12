@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PyroProgramming
 
-## Getting Started
+Welcome to **PyroProgramming**! This repository is your ultimate guide to programming, offering tutorials, documentation, and tools to help you master various programming languages.
 
-First, run the development server:
+## 📚 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Comprehensive Tutorials**: Learn languages including C++, Java, Python, JavaScript, CSS, and HTML.
+- **Extensive Documentation**: Access detailed guides and resources to support your learning journey.
+- **Online IDE**: Write and test your code in real-time with our integrated IDE.
+- **Community Support**: Join our Discord for help and discussions with fellow programmers.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To get started, explore the following sections:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Documentation Overview**: Learn how to navigate the PyroProgramming Docs.
+2. **Languages**: Dive into tutorials for each programming language.
+3. **Creating a Website**: Step-by-step guidance on building your own website.
+4. **Deployment**: Instructions on deploying your projects effectively.
+5. **Exploits**: Community tools and tricks (not endorsed).
 
-## Learn More
+## 🎉 Join the Community
 
-To learn more about Next.js, take a look at the following resources:
+Need help or want to connect? Join our Discord community for discussions, support, and more: [Join our Discord!](https://discord.gg/Gv4rVt2SJp)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is licensed under the **Creative Commons Zero v1.0 Universal**. You can freely use, modify, and distribute this work without asking for permission.
 
-## Deploy on Vercel
+## 🤝 Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+We welcome contributions! If you have suggestions or want to add to our documentation, feel free to open an issue or submit a pull request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📞 Contact
+
+For any inquiries, please reach out via our social channels (Discord) or on GitHub.
+
+---
+
+Happy coding! 🔥
