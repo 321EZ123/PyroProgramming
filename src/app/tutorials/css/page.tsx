@@ -69,55 +69,6 @@ p {
       </div>
 
       <div className="mb-10">
-        <h2 className="text-3xl font-bold mb-6">CSS Example</h2>
-        <p className="text-lg mb-4">
-          Learn from over 300 examples! With our editor, you can edit the CSS, and click on a button to view the result.
-        </p>
-
-        <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10">
-          <Link href="/tutorials/css/examples">Go to CSS Examples</Link>
-        </Button>
-      </div>
-
-      <div className="mb-10">
-        <h2 className="text-3xl font-bold mb-6">CSS Exercises</h2>
-        <p className="text-lg mb-4">
-          Test your CSS skills at PyroProgramming!
-        </p>
-
-        <div className="bg-card border border-fire-darker rounded-md p-6 mb-6">
-          <h3 className="text-xl font-bold mb-4">Exercise:</h3>
-          <p className="mb-4">Set the color of all p elements to "red":</p>
-
-          <div className="bg-[#1E1E1E] p-4 text-white font-mono text-sm rounded mb-4">
-            <pre className="language-css">
-              <code>{`p {
-  ___: red;
-}`}</code>
-            </pre>
-          </div>
-
-          <Button className="bg-primary hover:bg-primary/90 text-white">
-            Submit Answer »
-          </Button>
-        </div>
-
-        <Button variant="outline" className="border-fire-darker hover:bg-fire-darker/10">
-          <Link href="/tutorials/css/exercises">Start CSS Exercises</Link>
-        </Button>
-      </div>
-
-      <div className="mb-10">
-        <h2 className="text-3xl font-bold mb-6">CSS Quiz</h2>
-        <p className="text-lg mb-4">
-          Test your CSS skills with our CSS Quiz!
-        </p>
-        <Button className="bg-primary hover:bg-primary/90 text-white">
-          <Link href="/tutorials/css/quiz">Start CSS Quiz</Link>
-        </Button>
-      </div>
-
-      <div className="mb-10">
         <h2 className="text-3xl font-bold mb-6">CSS References</h2>
         <p className="text-lg mb-4">
           At PyroProgramming you will find complete CSS references of all properties and selectors with syntax, examples, browser support, and more:
@@ -151,16 +102,6 @@ p {
         </div>
       </div>
 
-      <div className="bg-card/50 border border-fire-darker p-6 rounded-md mb-8">
-        <h2 className="text-3xl font-bold mb-4">Kickstart your career</h2>
-        <p className="text-lg mb-4">
-          Get certified by completing the CSS course
-        </p>
-        <Button className="bg-primary hover:bg-primary/90 text-white mt-2">
-          Learn More
-        </Button>
-      </div>
-
       <div className="mb-10">
         <h2 className="text-3xl font-bold mb-6">Video: CSS Crash Course</h2>
         <div className="bg-[#1E1E1E] rounded-md overflow-hidden">
@@ -168,10 +109,11 @@ p {
             <div className="inline-block bg-primary text-white text-3xl font-bold p-4 mb-4">
               CSS Crash Course
             </div>
-            <p className="text-xl mb-4">in just 35 minutes</p>
+            <p className="text-xl mb-4">in just 20 minutes</p>
             <Button className="bg-primary hover:bg-primary/90 text-white">
-              Watch Video
+              <Link href="https://www.youtube.com/watch?v=1PnVor36_40">Watch Video</Link>
             </Button>
+            <p className="text-sm mt-2">We are not affiliated with YouTube or the creator of the video.</p>
           </div>
         </div>
       </div>
