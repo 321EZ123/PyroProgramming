@@ -91,19 +91,6 @@ print(fahrenheit_to_celsius(100))`}</code>
         </Button>
       </div>
 
-      <div className="mb-10">
-        <h2 className="text-3xl font-bold mb-6">Python Community Resources</h2>
-        <p className="text-lg mb-4">
-          Engage with the Python community through:
-        </p>
-        <ul className="list-disc list-inside mb-4">
-          <li><strong>Python.org:</strong> The official Python website with a wealth of documentation and tutorials.</li>
-          <li><strong>Stack Overflow:</strong> A great platform for getting help from other developers.</li>
-          <li><strong>Reddit:</strong> Join subreddits like r/Python for discussions and resources.</li>
-          <li><strong>Meetup:</strong> Attend local Python meetups and conferences to network with other learners and professionals.</li>
-        </ul>
-      </div>
-
       <div className="bg-card/50 border border-fire-darker p-6 rounded-md mb-8">
         <h2 className="text-3xl font-bold mb-4">Kickstart your career</h2>
         <p className="text-lg mb-4">
@@ -121,10 +108,11 @@ print(fahrenheit_to_celsius(100))`}</code>
             <div className="inline-block bg-primary text-white text-3xl font-bold p-4 mb-4">
               Python Crash Course
             </div>
-            <p className="text-xl mb-4">in just 40 minutes</p>
+            <p className="text-xl mb-4">in just 75 minutes</p>
             <Button className="bg-primary hover:bg-primary/90 text-white">
-              Watch Video
+              <Link href="https://www.youtube.com/watch?v=VchuKL44s6E">Watch Video</Link>
             </Button>
+            <p className="text-sm mt-2">We are not associated with YouTube or the creator.</p>
           </div>
         </div>
       </div>
