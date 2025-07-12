@@ -146,7 +146,7 @@ p {
       {/* Python Section */}
       <TutorialSection
         title="Python"
-        description="A popular programming language"
+        description="A popular programming language for beginners that has easier syntax"
         bgClass="bg-card"
         code={`if 5 > 2:
   print("Five is greater than two!")`}
