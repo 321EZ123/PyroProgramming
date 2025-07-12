@@ -51,7 +51,11 @@ print(fahrenheit_to_celsius(100))`}</code>
             </pre>
           </div>
           <div className="bg-card p-3 flex justify-center">
-            <Button variant="default" className="bg-primary hover:bg-primary/90 text-white">
+            <Button 
+              variant="default" 
+              className="bg-primary hover:bg-primary/90 text-white"
+              onClick={() => window.location.href = "https://pyroprogramming-ide.9p.al/"}
+            >
               Try it Yourself
             </Button>
           </div>
