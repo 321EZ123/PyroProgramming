@@ -4,6 +4,7 @@ import "./globals.css";
 import ClientBody from "./ClientBody";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -22,6 +23,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable}`}>
+      <head>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-QQD07H231B" />
+        <Script id="gtag-init">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-QQD07H231B');`}
+        </Script>
+      </head>
       <body suppressHydrationWarning className="antialiased font-sans bg-background text-foreground flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow pt-16">
